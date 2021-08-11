@@ -1,5 +1,5 @@
 <?php
- // created: 2021-08-09 12:48:07
+ // created: 2021-08-09 20:49:59
 
 $app_list_strings['record_type_display']=array (
   '' => '',
@@ -17,5 +17,4 @@ $app_list_strings['record_type_display']=array (
   'Tasks' => '과제',
   'KBContents' => '지식 기반',
   'Notes' => '메모',
-  'RevenueLineItems' => '매출 라인 품목',
 );

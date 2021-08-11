@@ -1,26 +1,22 @@
 <?php
- // created: 2021-08-09 12:48:06
-
-$app_list_strings['record_type_display_notes']=array (
-  'Accounts' => 'Account',
-  'Contacts' => 'Contact',
-  'Opportunities' => 'Opportunity',
-  'Tasks' => 'Task',
-  'ProductTemplates' => 'Product Catalog',
-  'Quotes' => 'Quote',
-  'Products' => 'Quoted Line Item',
-  'Contracts' => 'Contract',
-  'Emails' => 'Email',
-  'Bugs' => 'Bug',
-  'Project' => 'Project',
-  'ProjectTask' => 'Project Task',
-  'Prospects' => 'Target',
-  'Cases' => 'Case',
-  'Leads' => 'Lead',
-  'Meetings' => 'Meeting',
-  'Calls' => 'Call',
-  'KBContents' => 'Knowledge Base',
-  'PurchasedLineItems' => 'Purchased Line Item',
-  'Purchases' => 'Purchase',
-  'RevenueLineItems' => 'Revenue Line Items',
-);
+// created: 2021-08-09 20:59:30
+$app_list_strings['record_type_display_notes']['Accounts'] = 'Organisation';
+$app_list_strings['record_type_display_notes']['Contacts'] = 'Contact';
+$app_list_strings['record_type_display_notes']['Opportunities'] = 'Application';
+$app_list_strings['record_type_display_notes']['Tasks'] = 'Task';
+$app_list_strings['record_type_display_notes']['ProductTemplates'] = 'Product Catalog';
+$app_list_strings['record_type_display_notes']['Quotes'] = 'Quote';
+$app_list_strings['record_type_display_notes']['Products'] = 'Quoted Line Item';
+$app_list_strings['record_type_display_notes']['Contracts'] = 'Contract';
+$app_list_strings['record_type_display_notes']['Emails'] = 'Email';
+$app_list_strings['record_type_display_notes']['Bugs'] = 'Bug';
+$app_list_strings['record_type_display_notes']['Project'] = 'Project';
+$app_list_strings['record_type_display_notes']['ProjectTask'] = 'Project Task';
+$app_list_strings['record_type_display_notes']['Prospects'] = 'Target';
+$app_list_strings['record_type_display_notes']['Cases'] = 'Case';
+$app_list_strings['record_type_display_notes']['Leads'] = 'Lead';
+$app_list_strings['record_type_display_notes']['Meetings'] = 'Meeting';
+$app_list_strings['record_type_display_notes']['Calls'] = 'Call';
+$app_list_strings['record_type_display_notes']['KBContents'] = 'Knowledge Base';
+$app_list_strings['record_type_display_notes']['PurchasedLineItems'] = 'Purchased Line Item';
+$app_list_strings['record_type_display_notes']['Purchases'] = 'Purchase';

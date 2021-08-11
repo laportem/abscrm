@@ -152,15 +152,8 @@ array (
               ),
               13 => 
               array (
-                'name' => 'service_start_date',
-                'label' => 'LBL_SERVICE_START_DATE',
-                'enabled' => true,
-                'default' => true,
-              ),
-              14 => 
-              array (
-                'name' => 'sales_status',
-                'label' => 'LBL_SALES_STATUS',
+                'name' => 'probability',
+                'label' => 'LBL_PROBABILITY',
                 'enabled' => true,
                 'default' => true,
               ),

@@ -44,21 +44,13 @@ array (
               ),
               2 => 
               array (
-                'name' => 'sales_status',
-                'label' => 'LBL_SALES_STATUS',
-                'enabled' => true,
-                'default' => true,
-                'readonly' => true,
-              ),
-              3 => 
-              array (
                 'name' => 'sales_stage',
                 'label' => 'LBL_SALES_STAGE',
                 'enabled' => true,
                 'default' => true,
                 'readonly' => true,
               ),
-              4 => 
+              3 => 
               array (
                 'name' => 'date_closed',
                 'label' => 'LBL_DATE_CLOSED',
@@ -70,7 +62,7 @@ array (
                 ),
                 'readonly' => true,
               ),
-              5 => 
+              4 => 
               array (
                 'name' => 'amount',
                 'label' => 'LBL_LIKELY',
@@ -88,28 +80,28 @@ array (
                 'currency_field' => 'currency_id',
                 'base_rate_field' => 'base_rate',
               ),
-              6 => 
+              5 => 
               array (
                 'name' => 'opportunity_type',
                 'label' => 'LBL_TYPE',
                 'enabled' => true,
                 'default' => false,
               ),
-              7 => 
+              6 => 
               array (
                 'name' => 'lead_source',
                 'label' => 'LBL_LEAD_SOURCE',
                 'enabled' => true,
                 'default' => false,
               ),
-              8 => 
+              7 => 
               array (
                 'name' => 'next_step',
                 'label' => 'LBL_NEXT_STEP',
                 'enabled' => true,
                 'default' => false,
               ),
-              9 => 
+              8 => 
               array (
                 'name' => 'created_by_name',
                 'label' => 'LBL_CREATED',
@@ -119,7 +111,7 @@ array (
                 'link' => true,
                 'readonly' => true,
               ),
-              10 => 
+              9 => 
               array (
                 'name' => 'team_name',
                 'label' => 'LBL_LIST_TEAM',
@@ -127,7 +119,7 @@ array (
                 'default' => false,
                 'type' => 'teamset',
               ),
-              11 => 
+              10 => 
               array (
                 'name' => 'assigned_user_name',
                 'label' => 'LBL_LIST_ASSIGNED_USER',
@@ -140,7 +132,7 @@ array (
                 'id' => 'ASSIGNED_USER_ID',
                 'link' => true,
               ),
-              12 => 
+              11 => 
               array (
                 'name' => 'modified_by_name',
                 'label' => 'LBL_MODIFIED',
@@ -150,7 +142,7 @@ array (
                 'link' => true,
                 'readonly' => true,
               ),
-              13 => 
+              12 => 
               array (
                 'name' => 'date_entered',
                 'label' => 'LBL_DATE_ENTERED',
@@ -158,10 +150,10 @@ array (
                 'default' => false,
                 'readonly' => true,
               ),
-              14 => 
+              13 => 
               array (
-                'name' => 'service_start_date',
-                'label' => 'LBL_SERVICE_START_DATE',
+                'name' => 'probability',
+                'label' => 'LBL_PROBABILITY',
                 'enabled' => true,
                 'default' => true,
               ),

@@ -1,5 +1,5 @@
 <?php
- //created: 2021-08-09 12:48:07
+ //created: 2021-08-09 20:50:00
 
 $app_list_strings['moduleList']['MergeRecords']='Об\'єднання записів';
 $app_list_strings['moduleList']['Connectors']='З\'єднувачі';

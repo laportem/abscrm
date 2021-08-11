@@ -1,11 +1,11 @@
 <?php
- // created: 2021-08-09 12:48:06
-$dictionary['Opportunity']['fields']['date_closed']['required']=false;
-$dictionary['Opportunity']['fields']['date_closed']['audited']=false;
-$dictionary['Opportunity']['fields']['date_closed']['massupdate']=false;
-$dictionary['Opportunity']['fields']['date_closed']['hidemassupdate']=true;
+ // created: 2021-08-09 20:49:57
+$dictionary['Opportunity']['fields']['date_closed']['required']=true;
+$dictionary['Opportunity']['fields']['date_closed']['audited']=true;
+$dictionary['Opportunity']['fields']['date_closed']['massupdate']=true;
+$dictionary['Opportunity']['fields']['date_closed']['hidemassupdate']=false;
 $dictionary['Opportunity']['fields']['date_closed']['comments']='Expected or actual date the oppportunity will close';
-$dictionary['Opportunity']['fields']['date_closed']['importable']='false';
+$dictionary['Opportunity']['fields']['date_closed']['importable']='required';
 $dictionary['Opportunity']['fields']['date_closed']['duplicate_merge']='enabled';
 $dictionary['Opportunity']['fields']['date_closed']['duplicate_merge_dom_value']=1;
 $dictionary['Opportunity']['fields']['date_closed']['merge_filter']='disabled';

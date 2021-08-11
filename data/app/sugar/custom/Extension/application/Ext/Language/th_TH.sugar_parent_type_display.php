@@ -1,5 +1,5 @@
 <?php
- // created: 2021-08-09 12:48:07
+ // created: 2021-08-09 20:49:59
 
 $app_list_strings['parent_type_display']=array (
   'Accounts' => 'บัญชี',
@@ -18,5 +18,4 @@ $app_list_strings['parent_type_display']=array (
   'Notes' => 'หมายเหตุ',
   'PurchasedLineItems' => 'ซื้อสินค้าในไลน์',
   'Purchases' => 'ซื้อ',
-  'RevenueLineItems' => 'รายการบรรทัดรายได้',
 );

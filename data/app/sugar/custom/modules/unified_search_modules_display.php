@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-09 12:48:28
+// created: 2021-08-11 12:16:43
 $unified_search_modules_display = array (
   'Accounts' => 
   array (
@@ -88,10 +88,6 @@ $unified_search_modules_display = array (
   'Quotes' => 
   array (
     'visible' => false,
-  ),
-  'RevenueLineItems' => 
-  array (
-    'visible' => true,
   ),
   'Tasks' => 
   array (

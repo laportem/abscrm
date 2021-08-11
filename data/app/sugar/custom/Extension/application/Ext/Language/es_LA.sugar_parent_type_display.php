@@ -1,5 +1,5 @@
 <?php
- // created: 2021-08-09 12:48:07
+ // created: 2021-08-09 20:49:59
 
 $app_list_strings['parent_type_display']=array (
   'Accounts' => 'Cuenta',
@@ -18,5 +18,4 @@ $app_list_strings['parent_type_display']=array (
   'Notes' => 'Nota',
   'PurchasedLineItems' => 'Partida Individual Adquirida',
   'Purchases' => 'Adquisición',
-  'RevenueLineItems' => 'Artículos de Línea de Ganancia',
 );

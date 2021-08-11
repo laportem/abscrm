@@ -1,5 +1,5 @@
 <?php
- // created: 2021-08-09 12:48:07
+ // created: 2021-08-09 20:49:59
 
 $app_list_strings['parent_type_display']=array (
   'Accounts' => 'Llogaria',
@@ -18,5 +18,4 @@ $app_list_strings['parent_type_display']=array (
   'Notes' => 'Shënim',
   'PurchasedLineItems' => 'Artikull i blerë i linjës',
   'Purchases' => 'Blerje',
-  'RevenueLineItems' => 'Rreshti i llojeve të të ardhurave',
 );

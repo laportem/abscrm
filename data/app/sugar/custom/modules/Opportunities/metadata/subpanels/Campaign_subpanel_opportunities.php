@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-09 12:48:07
+// created: 2021-08-09 20:50:07
 $subpanel_layout['list_fields'] = array (
   'name' => 
   array (
@@ -70,27 +70,12 @@ $subpanel_layout['list_fields'] = array (
   array (
     'usage' => 'query_only',
   ),
-  'service_start_date' => 
+  'probability' => 
   array (
-    'type' => 'date',
-    'related_fields' => 
-    array (
-    ),
-    'studio' => 
-    array (
-      'calculated' => false,
-    ),
-    'vname' => 'LBL_SERVICE_START_DATE',
-    'width' => 10,
-    'default' => true,
-  ),
-  'sales_status' => 
-  array (
-    'type' => 'enum',
-    'readonly' => true,
+    'type' => 'int',
     'studio' => true,
-    'default' => true,
-    'vname' => 'LBL_SALES_STATUS',
+    'vname' => 'LBL_PROBABILITY',
     'width' => 10,
+    'default' => true,
   ),
 );

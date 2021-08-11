@@ -168,12 +168,6 @@ array (
                 'readonly' => true,
                 'dismiss_label' => true,
               ),
-              4 => 
-              array (
-                'name' => 'renewal',
-                'type' => 'renewal',
-                'dismiss_label' => true,
-              ),
             ),
           ),
           1 => 
@@ -183,6 +177,8 @@ array (
             'columns' => 2,
             'labels' => true,
             'placeholders' => true,
+            'newTab' => true,
+            'panelDefault' => 'expanded',
             'fields' => 
             array (
               0 => 
@@ -206,10 +202,6 @@ array (
               ),
               2 => 
               array (
-                'name' => 'sales_status',
-              ),
-              3 => 
-              array (
                 'name' => 'sales_stage',
                 'type' => 'enum-cascade',
                 'label' => 'LBL_SALES_STAGE',
@@ -218,8 +210,9 @@ array (
                   0 => 'total_revenue_line_items',
                   1 => 'closed_revenue_line_items',
                 ),
+                'span' => 12,
               ),
-              4 => 
+              3 => 
               array (
                 'name' => 'amount',
                 'type' => 'currency',
@@ -232,21 +225,9 @@ array (
                 ),
                 'currency_field' => 'currency_id',
                 'base_rate_field' => 'base_rate',
-                'span' => 6,
+                'span' => 12,
               ),
-              5 => 
-              array (
-                'name' => 'service_start_date',
-                'type' => 'date-cascade',
-                'label' => 'LBL_SERVICE_START_DATE',
-                'disable_field' => 'service_open_revenue_line_items',
-                'related_fields' => 
-                array (
-                  0 => 'service_open_revenue_line_items',
-                ),
-                'span' => 6,
-              ),
-              6 => 
+              4 => 
               array (
                 'name' => 'best_case',
                 'type' => 'currency',
@@ -259,37 +240,9 @@ array (
                 ),
                 'currency_field' => 'currency_id',
                 'base_rate_field' => 'base_rate',
+                'span' => 12,
               ),
-              7 => 
-              array (
-                'name' => 'service_duration',
-                'type' => 'fieldset-cascade',
-                'label' => 'LBL_SERVICE_DURATION',
-                'inline' => true,
-                'show_child_labels' => false,
-                'css_class' => 'service-duration-field',
-                'fields' => 
-                array (
-                  0 => 
-                  array (
-                    'name' => 'service_duration_value',
-                    'label' => 'LBL_SERVICE_DURATION_VALUE',
-                  ),
-                  1 => 
-                  array (
-                    'name' => 'service_duration_unit',
-                    'label' => 'LBL_SERVICE_DURATION_UNIT',
-                  ),
-                ),
-                'related_fields' => 
-                array (
-                  0 => 'service_duration_value',
-                  1 => 'service_duration_unit',
-                  2 => 'service_open_flex_duration_rlis',
-                ),
-                'disable_field' => 'service_open_flex_duration_rlis',
-              ),
-              8 => 
+              5 => 
               array (
                 'name' => 'worst_case',
                 'type' => 'currency',
@@ -303,7 +256,7 @@ array (
                 'currency_field' => 'currency_id',
                 'base_rate_field' => 'base_rate',
               ),
-              9 => 
+              6 => 
               array (
                 'name' => 'commentlog',
                 'label' => 'LBL_COMMENTLOG',
@@ -319,10 +272,15 @@ array (
                   'max_num' => 100,
                 ),
               ),
-              10 => 
+              7 => 
               array (
                 'name' => 'tag',
-                'span' => 12,
+                'span' => 6,
+              ),
+              8 => 
+              array (
+                'name' => 'probability',
+                'span' => 6,
               ),
             ),
           ),
@@ -333,20 +291,25 @@ array (
             'hide' => true,
             'placeholders' => true,
             'columns' => 2,
+            'newTab' => true,
+            'panelDefault' => 'expanded',
             'fields' => 
             array (
               0 => 'next_step',
               1 => 'opportunity_type',
-              2 => 'renewal_parent_name',
-              3 => 'lead_source',
-              4 => 
+              2 => 
+              array (
+                'name' => 'lead_source',
+                'span' => 12,
+              ),
+              3 => 
               array (
                 'name' => 'description',
                 'span' => 12,
               ),
-              5 => 'assigned_user_name',
-              6 => 'team_name',
-              7 => 
+              4 => 'assigned_user_name',
+              5 => 'team_name',
+              6 => 
               array (
                 'name' => 'date_entered_by',
                 'readonly' => true,
@@ -370,7 +333,7 @@ array (
                   ),
                 ),
               ),
-              8 => 
+              7 => 
               array (
                 'name' => 'date_modified_by',
                 'readonly' => true,
@@ -396,6 +359,10 @@ array (
               ),
             ),
           ),
+        ),
+        'templateMeta' => 
+        array (
+          'useTabs' => true,
         ),
       ),
     ),

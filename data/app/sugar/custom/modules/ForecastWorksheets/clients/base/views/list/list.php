@@ -30,7 +30,7 @@ array (
               1 => 
               array (
                 'name' => 'parent_name',
-                'label' => 'LBL_REVENUELINEITEM_NAME',
+                'label' => 'LBL_OPPORTUNITY_NAME',
                 'enabled' => true,
                 'default' => true,
                 'related_fields' => 

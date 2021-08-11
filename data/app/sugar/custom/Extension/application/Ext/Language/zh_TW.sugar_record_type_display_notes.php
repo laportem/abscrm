@@ -1,5 +1,5 @@
 <?php
- // created: 2021-08-09 12:48:07
+ // created: 2021-08-09 20:49:59
 
 $app_list_strings['record_type_display_notes']=array (
   'Accounts' => '帳戶',
@@ -22,5 +22,4 @@ $app_list_strings['record_type_display_notes']=array (
   'KBContents' => '知識庫',
   'PurchasedLineItems' => '購買項目',
   'Purchases' => '購買',
-  'RevenueLineItems' => '收入項目',
 );

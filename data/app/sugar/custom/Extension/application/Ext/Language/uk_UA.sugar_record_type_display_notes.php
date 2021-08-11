@@ -1,5 +1,5 @@
 <?php
- // created: 2021-08-09 12:48:07
+ // created: 2021-08-09 20:50:00
 
 $app_list_strings['record_type_display_notes']=array (
   'Accounts' => 'Контрагент',
@@ -22,5 +22,4 @@ $app_list_strings['record_type_display_notes']=array (
   'KBContents' => 'База знань',
   'PurchasedLineItems' => 'Куплений продукт',
   'Purchases' => 'Покупка',
-  'RevenueLineItems' => 'Доходи за продукти',
 );

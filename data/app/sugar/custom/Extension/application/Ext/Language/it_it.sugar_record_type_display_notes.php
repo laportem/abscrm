@@ -1,5 +1,5 @@
 <?php
- // created: 2021-08-09 12:48:07
+ // created: 2021-08-09 20:49:59
 
 $app_list_strings['record_type_display_notes']=array (
   'Accounts' => 'Azienda',
@@ -22,5 +22,4 @@ $app_list_strings['record_type_display_notes']=array (
   'KBContents' => 'Knowledge Base',
   'PurchasedLineItems' => 'Prodotto acquistato',
   'Purchases' => 'Acquisto',
-  'RevenueLineItems' => 'Elementi dell´Opportunità',
 );

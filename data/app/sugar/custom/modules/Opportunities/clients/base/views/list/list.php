@@ -58,14 +58,6 @@ array (
               ),
               3 => 
               array (
-                'name' => 'sales_status',
-                'label' => 'LBL_SALES_STATUS',
-                'enabled' => true,
-                'default' => true,
-                'type' => 'enum',
-              ),
-              4 => 
-              array (
                 'name' => 'sales_stage',
                 'label' => 'LBL_LIST_SALES_STAGE',
                 'enabled' => true,
@@ -77,52 +69,7 @@ array (
                   1 => 'closed_revenue_line_items',
                 ),
               ),
-              5 => 
-              array (
-                'name' => 'service_start_date',
-                'label' => 'LBL_SERVICE_START_DATE',
-                'enabled' => true,
-                'default' => false,
-                'related_fields' => 
-                array (
-                  0 => 'service_open_revenue_line_items',
-                ),
-                'type' => 'date-cascade',
-                'disable_field' => 'service_open_revenue_line_items',
-              ),
-              6 => 
-              array (
-                'name' => 'service_duration',
-                'label' => 'LBL_SERVICE_DURATION',
-                'enabled' => true,
-                'default' => false,
-                'related_fields' => 
-                array (
-                  0 => 'service_duration_value',
-                  1 => 'service_duration_unit',
-                  2 => 'service_open_flex_duration_rlis',
-                ),
-                'type' => 'fieldset-cascade',
-                'inline' => true,
-                'show_child_labels' => false,
-                'css_class' => 'service-duration-field',
-                'fields' => 
-                array (
-                  0 => 
-                  array (
-                    'name' => 'service_duration_value',
-                    'label' => 'LBL_SERVICE_DURATION_VALUE',
-                  ),
-                  1 => 
-                  array (
-                    'name' => 'service_duration_unit',
-                    'label' => 'LBL_SERVICE_DURATION_UNIT',
-                  ),
-                ),
-                'orderBy' => 'service_duration_unit',
-                'disable_field' => 'service_open_flex_duration_rlis',
-              ),
-              7 => 
+              4 => 
               array (
                 'name' => 'amount',
                 'label' => 'LBL_LIKELY',
@@ -139,28 +86,28 @@ array (
                 'currency_field' => 'currency_id',
                 'base_rate_field' => 'base_rate',
               ),
-              8 => 
+              5 => 
               array (
                 'name' => 'opportunity_type',
                 'label' => 'LBL_TYPE',
                 'enabled' => true,
                 'default' => true,
               ),
-              9 => 
+              6 => 
               array (
                 'name' => 'lead_source',
                 'label' => 'LBL_LEAD_SOURCE',
                 'enabled' => true,
                 'default' => true,
               ),
-              10 => 
+              7 => 
               array (
                 'name' => 'next_step',
                 'label' => 'LBL_NEXT_STEP',
                 'enabled' => true,
                 'default' => true,
               ),
-              11 => 
+              8 => 
               array (
                 'name' => 'created_by_name',
                 'label' => 'LBL_CREATED',
@@ -171,7 +118,7 @@ array (
                 'readonly' => true,
                 'sortable' => true,
               ),
-              12 => 
+              9 => 
               array (
                 'name' => 'team_name',
                 'label' => 'LBL_LIST_TEAM',
@@ -179,7 +126,7 @@ array (
                 'default' => false,
                 'type' => 'teamset',
               ),
-              13 => 
+              10 => 
               array (
                 'name' => 'assigned_user_name',
                 'label' => 'LBL_LIST_ASSIGNED_USER',
@@ -193,7 +140,7 @@ array (
                 'link' => true,
                 'sortable' => true,
               ),
-              14 => 
+              11 => 
               array (
                 'name' => 'modified_by_name',
                 'label' => 'LBL_MODIFIED',
@@ -204,13 +151,20 @@ array (
                 'readonly' => true,
                 'sortable' => true,
               ),
-              15 => 
+              12 => 
               array (
                 'name' => 'date_entered',
                 'label' => 'LBL_DATE_ENTERED',
                 'enabled' => true,
                 'default' => true,
                 'readonly' => true,
+              ),
+              13 => 
+              array (
+                'name' => 'probability',
+                'label' => 'LBL_PROBABILITY',
+                'enabled' => true,
+                'default' => true,
               ),
             ),
           ),

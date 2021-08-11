@@ -45,31 +45,7 @@ array (
               5 => 'tag',
               6 => 'assigned_user_name',
               7 => 'team_name',
-              8 => 
-              array (
-                'name' => 'sales_status',
-                'readonly' => true,
-                'studio' => true,
-                'label' => 'LBL_SALES_STATUS',
-              ),
-              9 => 
-              array (
-                'name' => 'service_start_date',
-                'comment' => 'Service start date field.',
-                'related_fields' => 
-                array (
-                ),
-                'studio' => 
-                array (
-                  'calculated' => false,
-                ),
-                'label' => 'LBL_SERVICE_START_DATE',
-              ),
-              10 => 
-              array (
-                'name' => 'renewal_parent_name',
-                'label' => 'LBL_RENEWAL_PARENT',
-              ),
+              8 => 'probability',
             ),
           ),
         ),

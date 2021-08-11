@@ -52,12 +52,6 @@ array (
                 'readonly' => true,
                 'dismiss_label' => true,
               ),
-              4 => 
-              array (
-                'name' => 'renewal',
-                'type' => 'renewal',
-                'dismiss_label' => true,
-              ),
             ),
           ),
           1 => 
@@ -90,46 +84,6 @@ array (
               ),
               2 => 
               array (
-                'name' => 'service_start_date',
-                'type' => 'date-cascade',
-                'label' => 'LBL_SERVICE_START_DATE',
-                'disable_field' => 'service_open_revenue_line_items',
-                'related_fields' => 
-                array (
-                  0 => 'service_open_revenue_line_items',
-                ),
-              ),
-              3 => 
-              array (
-                'name' => 'service_duration',
-                'type' => 'fieldset-cascade',
-                'label' => 'LBL_SERVICE_DURATION',
-                'inline' => true,
-                'show_child_labels' => false,
-                'css_class' => 'service-duration-field',
-                'fields' => 
-                array (
-                  0 => 
-                  array (
-                    'name' => 'service_duration_value',
-                    'label' => 'LBL_SERVICE_DURATION_VALUE',
-                  ),
-                  1 => 
-                  array (
-                    'name' => 'service_duration_unit',
-                    'label' => 'LBL_SERVICE_DURATION_UNIT',
-                  ),
-                ),
-                'related_fields' => 
-                array (
-                  0 => 'service_duration_value',
-                  1 => 'service_duration_unit',
-                  2 => 'service_open_flex_duration_rlis',
-                ),
-                'disable_field' => 'service_open_flex_duration_rlis',
-              ),
-              4 => 
-              array (
                 'name' => 'amount',
                 'type' => 'currency',
                 'label' => 'LBL_LIKELY',
@@ -143,7 +97,7 @@ array (
                 'base_rate_field' => 'base_rate',
                 'span' => 6,
               ),
-              5 => 
+              3 => 
               array (
                 'name' => 'best_case',
                 'type' => 'currency',
@@ -157,7 +111,7 @@ array (
                 'currency_field' => 'currency_id',
                 'base_rate_field' => 'base_rate',
               ),
-              6 => 
+              4 => 
               array (
                 'name' => 'worst_case',
                 'type' => 'currency',
@@ -171,19 +125,11 @@ array (
                 'currency_field' => 'currency_id',
                 'base_rate_field' => 'base_rate',
               ),
-              7 => 
+              5 => 
               array (
                 'name' => 'tag',
               ),
-              8 => 
-              array (
-                'name' => 'sales_status',
-                'label' => 'LBL_SALES_STATUS',
-                'default' => true,
-                'enabled' => true,
-                'type' => 'enum',
-              ),
-              9 => 
+              6 => 
               array (
                 'name' => 'sales_stage',
                 'type' => 'enum-cascade',
@@ -194,6 +140,7 @@ array (
                   1 => 'closed_revenue_line_items',
                 ),
               ),
+              7 => 'probability',
             ),
           ),
           2 => 
@@ -207,16 +154,16 @@ array (
             array (
               0 => 'next_step',
               1 => 'opportunity_type',
-              2 => 'renewal_parent_name',
-              3 => 'lead_source',
-              4 => 'campaign_name',
-              5 => 
+              2 => 'lead_source',
+              3 => 'campaign_name',
+              4 => 
               array (
                 'name' => 'description',
+                'span' => 12,
               ),
-              6 => 'assigned_user_name',
-              7 => 'team_name',
-              8 => 
+              5 => 'assigned_user_name',
+              6 => 'team_name',
+              7 => 
               array (
                 'name' => 'date_entered_by',
                 'readonly' => true,
@@ -239,7 +186,7 @@ array (
                   ),
                 ),
               ),
-              9 => 
+              8 => 
               array (
                 'name' => 'date_modified_by',
                 'readonly' => true,

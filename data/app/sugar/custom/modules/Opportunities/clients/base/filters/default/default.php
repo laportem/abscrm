@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-09 12:48:08
+// created: 2021-08-09 20:50:14
 $viewdefs['Opportunities']['base']['filter']['default'] = array (
   'default_filter' => 'all_records',
   'fields' => 
@@ -43,16 +43,6 @@ $viewdefs['Opportunities']['base']['filter']['default'] = array (
     'date_closed' => 
     array (
     ),
-    'service_duration' => 
-    array (
-      'dbFields' => 
-      array (
-        0 => 'service_duration_value',
-        1 => 'service_duration_unit',
-      ),
-      'vname' => 'LBL_SERVICE_DURATION',
-      'type' => 'text',
-    ),
     'tag' => 
     array (
     ),
@@ -69,10 +59,7 @@ $viewdefs['Opportunities']['base']['filter']['default'] = array (
       'predefined_filter' => true,
       'vname' => 'LBL_FAVORITES_FILTER',
     ),
-    'sales_status' => 
-    array (
-    ),
-    'service_start_date' => 
+    'probability' => 
     array (
     ),
   ),
