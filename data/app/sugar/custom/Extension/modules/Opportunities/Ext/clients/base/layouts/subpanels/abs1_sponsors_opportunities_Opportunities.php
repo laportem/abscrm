@@ -143,3 +143,570 @@ $viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = arra
     'link' => 'abs1_sponsors_opportunities',
   ),
 );
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);
+
+$viewdefs['Opportunities']['base']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_SPONSORS_OPPORTUNITIES_FROM_ABS1_SPONSORS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_sponsors_opportunities',
+  ),
+);

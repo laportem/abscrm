@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-11 12:16:42
+// created: 2021-08-27 00:08:17
 $dictionary["ABS1_sponsors"]["fields"]["abs1_sponsors_opportunities"] = array (
   'name' => 'abs1_sponsors_opportunities',
   'type' => 'link',

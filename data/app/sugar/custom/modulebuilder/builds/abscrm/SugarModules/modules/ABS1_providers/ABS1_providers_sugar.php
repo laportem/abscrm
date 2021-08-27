@@ -59,10 +59,12 @@ class ABS1_providers_sugar extends Basic {
     public $locked_fields_link;
     public $sync_key;
     public $provider_type;
+    public $mat_c;
     public $contact_id_c;
     public $contact;
     public $account_id_c;
-    public $organisation;
+    public $account;
+    public $uuid_c;
     
     public function bean_implements($interface){
         switch($interface){

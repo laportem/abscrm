@@ -177,23 +177,27 @@ array (
               1 => 
               array (
                 'name' => 'abs1_collaborators_opportunities_name',
+                'label' => 'LBL_APPLICATION',
               ),
               2 => 
-              array (
-                'readonly' => false,
-                'name' => 'organisation',
-                'studio' => 'visible',
-                'label' => 'LBL_ORGANISATION',
-              ),
-              3 => 
-              array (
-              ),
-              4 => 
               array (
                 'readonly' => false,
                 'name' => 'contact',
                 'studio' => 'visible',
                 'label' => 'LBL_CONTACT',
+              ),
+              3 => 
+              array (
+                'readonly' => false,
+                'name' => 'account',
+                'studio' => 'visible',
+                'label' => 'LBL_ACCOUNT',
+              ),
+              4 => 
+              array (
+                'readonly' => false,
+                'name' => 'local_c',
+                'label' => 'LBL_LOCAL_C',
               ),
               5 => 
               array (
@@ -208,9 +212,22 @@ array (
                 'name' => 'description',
                 'span' => 12,
               ),
-              8 => 'assigned_user_name',
-              9 => 'team_name',
-              10 => 
+            ),
+          ),
+          2 => 
+          array (
+            'name' => 'panel_hidden',
+            'label' => 'LBL_SHOW_MORE',
+            'hide' => true,
+            'columns' => 2,
+            'placeholders' => true,
+            'newTab' => false,
+            'panelDefault' => 'collapsed',
+            'fields' => 
+            array (
+              0 => 'assigned_user_name',
+              1 => 'team_name',
+              2 => 
               array (
                 'name' => 'date_modified_by',
                 'readonly' => true,
@@ -234,7 +251,7 @@ array (
                   ),
                 ),
               ),
-              11 => 
+              3 => 
               array (
                 'name' => 'date_entered_by',
                 'readonly' => true,
@@ -257,6 +274,13 @@ array (
                     'name' => 'created_by_name',
                   ),
                 ),
+              ),
+              4 => 
+              array (
+                'readonly' => true,
+                'name' => 'uuid_c',
+                'label' => 'LBL_UUID_C',
+                'span' => 12,
               ),
             ),
           ),

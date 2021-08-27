@@ -58,7 +58,10 @@ $mod_strings = array (
   'LBL_ABS1_SPONSORS_RECORD_DASHBOARD' => 'Sponsors Record Dashboard',
   'LBL_SPONSORS_TYPE' => 'Type',
   'LBL_CONTACT' => 'Contact',
-  'LBL_CONTACT_CONTACT_ID' => 'Contact (related Contact ID)',
-  'LBL_ORGANISATION_ACCOUNT_ID' => 'Organisation (related Organisation ID)',
   'LBL_ORGANISATION' => 'Organisation',
+  'LBL_UUID_C' => 'UUID',
+  'LBL_ACCOUNT' => 'Account',
+  'LBL_CONTACT_CONTACT_ID' => 'Contact (related Contact ID)',
+  'LBL_ACCOUNT_ACCOUNT_ID' => 'Account (related Organisation ID)',
+  'LBL_LOCAL_C' => 'Local',
 );

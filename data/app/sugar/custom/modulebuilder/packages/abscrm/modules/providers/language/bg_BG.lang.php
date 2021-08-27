@@ -57,8 +57,11 @@ $mod_strings = array (
   'LBL_ABS1_PROVIDERS_FOCUS_DRAWER_DASHBOARD' => 'Providers Focus Drawer',
   'LBL_ABS1_PROVIDERS_RECORD_DASHBOARD' => 'Providers Record Dashboard',
   'LBL_PROVIDER_TYPE' => 'Type',
-  'LBL_CONTACT_CONTACT_ID' => 'Contact (related Contact ID)',
   'LBL_CONTACT' => 'Contact',
-  'LBL_ORGANISATION_ACCOUNT_ID' => 'Organisation (related Organisation ID)',
   'LBL_ORGANISATION' => 'Organisation',
+  'LBL_MAT_C' => 'MAT',
+  'LBL_CONTACT_CONTACT_ID' => 'Contact (related Contact ID)',
+  'LBL_ACCOUNT_ACCOUNT_ID' => 'Organisation (related Organisation ID)',
+  'LBL_ACCOUNT' => 'Organisation',
+  'LBL_UUID_C' => 'UUID',
 );

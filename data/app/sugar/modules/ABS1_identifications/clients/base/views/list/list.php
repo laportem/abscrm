@@ -17,32 +17,34 @@ array (
             array (
               0 => 
               array (
-                'name' => 'identification_type_c',
-                'label' => 'LBL_IDENTIFICATION_TYPE_C',
-                'enabled' => true,
-                'readonly' => false,
-                'default' => true,
-              ),
-              1 => 
-              array (
                 'name' => 'name',
                 'label' => 'LBL_NAME',
                 'default' => true,
                 'enabled' => true,
                 'link' => true,
               ),
-              2 => 
+              1 => 
               array (
-                'name' => 'issuing_country_c',
-                'label' => 'LBL_ISSUING_COUNTRY_C',
+                'name' => 'identification_type_c',
+                'label' => 'LBL_IDENTIFICATION_TYPE_C',
                 'enabled' => true,
                 'readonly' => false,
                 'default' => true,
               ),
+              2 => 
+              array (
+                'name' => 'abs1_identifications_contacts_name',
+                'label' => 'LBL_CONTACT',
+                'enabled' => true,
+                'id' => 'ABS1_IDENTIFICATIONS_CONTACTSCONTACTS_IDA',
+                'link' => true,
+                'sortable' => false,
+                'default' => true,
+              ),
               3 => 
               array (
-                'name' => 'valid_from_c',
-                'label' => 'LBL_VALID_FROM_C',
+                'name' => 'issuing_country_c',
+                'label' => 'LBL_ISSUING_COUNTRY_C',
                 'enabled' => true,
                 'readonly' => false,
                 'default' => true,
@@ -57,9 +59,11 @@ array (
               ),
               5 => 
               array (
-                'name' => 'date_modified',
+                'name' => 'valid_from_c',
+                'label' => 'LBL_VALID_FROM_C',
                 'enabled' => true,
-                'default' => true,
+                'readonly' => false,
+                'default' => false,
               ),
               6 => 
               array (
@@ -78,11 +82,17 @@ array (
               ),
               8 => 
               array (
-                'name' => 'date_entered',
+                'name' => 'date_modified',
                 'enabled' => true,
                 'default' => false,
               ),
               9 => 
+              array (
+                'name' => 'date_entered',
+                'enabled' => true,
+                'default' => false,
+              ),
+              10 => 
               array (
                 'name' => 'tag',
                 'label' => 'LBL_TAGS',

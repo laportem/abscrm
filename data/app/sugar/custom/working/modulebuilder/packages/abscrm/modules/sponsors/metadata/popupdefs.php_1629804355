@@ -1,0 +1,33 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'ABS1_sponsors',
+    'varName' => 'ABS1_sponsors',
+    'orderBy' => 'abs1_sponsors.name',
+    'whereClauses' => array (
+  'name' => 'abs1_sponsors.name',
+),
+    'searchInputs' => array (
+  0 => 'abs1_sponsors_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'readonly' => false,
+    'default' => true,
+    'label' => 'LBL_NAME',
+    'width' => 10,
+  ),
+  'SPONSORS_TYPE' => 
+  array (
+    'readonly' => false,
+    'type' => 'enum',
+    'default' => true,
+    'label' => 'LBL_SPONSORS_TYPE',
+    'width' => 10,
+  ),
+),
+);

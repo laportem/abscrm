@@ -44,3 +44,264 @@ $viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
     'link' => 'abs1_identifications_accounts',
   ),
 );
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);
+
+$viewdefs['Accounts']['mobile']['layout']['subpanels']['components'][] = array (
+  'layout' => 'subpanel',
+  'label' => 'LBL_ABS1_IDENTIFICATIONS_ACCOUNTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
+  'context' => 
+  array (
+    'link' => 'abs1_identifications_accounts',
+  ),
+);

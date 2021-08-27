@@ -28,7 +28,6 @@ $viewdefs['Accounts']['base']['view']['list'] = array(
                     'label' => 'LBL_LIST_ACCOUNT_NAME',
                     'enabled' => true,
                     'default' => true,
-                    'width' =>  'xlarge',
                 ),
                 array(
                     'name' => 'billing_address_city',

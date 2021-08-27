@@ -13,30 +13,28 @@ $viewdefs['Opportunities']['base']['view']['subpanel-for-accounts-opportunities'
         0 => 
         array (
           'name' => 'name',
-          'label' => 'LBL_LIST_OPPORTUNITY_NAME',
+          'label' => 'LBL_OPPORTUNITY_NAME',
           'enabled' => true,
           'default' => true,
           'link' => true,
         ),
         1 => 
         array (
-          'name' => 'date_closed',
-          'label' => 'LBL_DATE_CLOSED',
+          'name' => 'purpose_c',
+          'label' => 'LBL_PURPOSE',
           'enabled' => true,
+          'readonly' => false,
           'default' => true,
-          'related_fields' => 
-          array (
-            0 => 'total_revenue_line_items',
-            1 => 'closed_revenue_line_items',
-          ),
-          'type' => 'date-cascade',
-          'disable_field' => 
-          array (
-            0 => 'total_revenue_line_items',
-            1 => 'closed_revenue_line_items',
-          ),
         ),
         2 => 
+        array (
+          'name' => 'applicant_type_c',
+          'label' => 'LBL_APPLICANT_TYPE_C',
+          'enabled' => true,
+          'readonly' => false,
+          'default' => true,
+        ),
+        3 => 
         array (
           'name' => 'sales_stage',
           'label' => 'LBL_LIST_SALES_STAGE',
@@ -54,12 +52,50 @@ $viewdefs['Opportunities']['base']['view']['subpanel-for-accounts-opportunities'
             1 => 'closed_revenue_line_items',
           ),
         ),
-        3 => 
+        4 => 
+        array (
+          'name' => 'natural_person_c',
+          'label' => 'LBL_NATURAL_PERSON_C',
+          'enabled' => true,
+          'readonly' => false,
+          'id' => 'CONTACT_ID_C',
+          'link' => true,
+          'sortable' => false,
+          'default' => true,
+        ),
+        5 => 
+        array (
+          'name' => 'expected_completion_date_c',
+          'label' => 'LBL_EXPECTED_COMPLETION_DATE',
+          'enabled' => true,
+          'readonly' => false,
+          'default' => true,
+        ),
+
+        6 => 
+        array (
+          'name' => 'date_closed',
+          'label' => 'LBL_DATE_CLOSED',
+          'enabled' => false,
+          'default' => false,
+          'related_fields' => 
+          array (
+            0 => 'total_revenue_line_items',
+            1 => 'closed_revenue_line_items',
+          ),
+          'type' => 'date-cascade',
+          'disable_field' => 
+          array (
+            0 => 'total_revenue_line_items',
+            1 => 'closed_revenue_line_items',
+          ),
+        ),
+        7 => 
         array (
           'name' => 'amount',
           'label' => 'LBL_LIKELY',
-          'enabled' => true,
-          'default' => true,
+          'enabled' => false,
+          'default' => false,
           'related_fields' => 
           array (
             0 => 'amount',
@@ -71,12 +107,12 @@ $viewdefs['Opportunities']['base']['view']['subpanel-for-accounts-opportunities'
           'currency_field' => 'currency_id',
           'base_rate_field' => 'base_rate',
         ),
-        4 => 
+        8 => 
         array (
           'name' => 'assigned_user_name',
           'label' => 'LBL_LIST_ASSIGNED_TO_NAME',
-          'enabled' => true,
-          'default' => true,
+          'enabled' => false,
+          'default' => false,
           'related_fields' => 
           array (
             0 => 'assigned_user_id',
@@ -86,12 +122,12 @@ $viewdefs['Opportunities']['base']['view']['subpanel-for-accounts-opportunities'
           'target_record_key' => 'assigned_user_id',
           'target_module' => 'Employees',
         ),
-        5 => 
+        9 => 
         array (
           'name' => 'probability',
           'label' => 'LBL_PROBABILITY',
-          'enabled' => true,
-          'default' => true,
+          'enabled' => false,
+          'default' => false,
         ),
       ),
     ),

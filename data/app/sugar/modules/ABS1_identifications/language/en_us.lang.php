@@ -59,10 +59,11 @@ $mod_strings = array (
   'LBL_IDENTIFICATION_TYPE_C' => 'Identification Type',
   'LBL_ISSUING_COUNTRY_C' => 'Issuing Country',
   'LBL_VALID_FROM_C' => 'Valid From',
-  'LBL_VALID_TO_C' => 'Valid To',
+  'LBL_VALID_TO_C' => 'Valid Until',
   'LBL_FRONT_IMAGE_C' => 'Front Image',
   'LBL_BACK_IMAGE_C' => 'Back Image',
   'LBL_UUID_C' => 'UUID',
   'LBL_RECORD_BODY' => 'Overview',
   'LBL_SHOW_MORE' => 'Record Info',
+  'LBL_CONTACT' => 'Contact',
 );

@@ -52,7 +52,7 @@ $dictionary['ABS1_identifications'] = array(
   ),
   'identification_type_c' => 
   array (
-    'required' => false,
+    'required' => true,
     'readonly' => false,
     'name' => 'identification_type_c',
     'vname' => 'LBL_IDENTIFICATION_TYPE_C',
@@ -79,7 +79,7 @@ $dictionary['ABS1_identifications'] = array(
   ),
   'issuing_country_c' => 
   array (
-    'required' => false,
+    'required' => true,
     'readonly' => false,
     'name' => 'issuing_country_c',
     'vname' => 'LBL_ISSUING_COUNTRY_C',
@@ -134,7 +134,7 @@ $dictionary['ABS1_identifications'] = array(
   ),
   'valid_to_c' => 
   array (
-    'required' => false,
+    'required' => true,
     'readonly' => false,
     'name' => 'valid_to_c',
     'vname' => 'LBL_VALID_TO_C',
@@ -217,7 +217,7 @@ $dictionary['ABS1_identifications'] = array(
   'uuid_c' => 
   array (
     'required' => false,
-    'readonly' => false,
+    'readonly' => true,
     'name' => 'uuid_c',
     'vname' => 'LBL_UUID_C',
     'type' => 'varchar',

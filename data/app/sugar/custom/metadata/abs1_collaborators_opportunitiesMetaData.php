@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-11 12:16:43
+// created: 2021-08-27 00:08:17
 $dictionary["abs1_collaborators_opportunities"] = array (
   'true_relationship_type' => 'one-to-many',
   'relationships' => 

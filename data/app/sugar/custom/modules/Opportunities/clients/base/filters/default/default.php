@@ -10,37 +10,52 @@ $viewdefs['Opportunities']['base']['filter']['default'] = array (
     'account_name' => 
     array (
     ),
-    'amount' => 
+    'natural_person_c' => 
     array (
     ),
-    'best_case' => 
+    'purpose_c' => 
     array (
     ),
-    'worst_case' => 
-    array (
-    ),
-    'renewal' => 
-    array (
-    ),
-    'next_step' => 
-    array (
-    ),
-    'lead_source' => 
-    array (
-    ),
-    'opportunity_type' => 
+    'applicant_type_c' => 
     array (
     ),
     'sales_stage' => 
+    array (
+    ),
+    'priority_c' => 
+    array (
+    ),
+    'form_declaration_c' => 
+    array (
+    ),
+    'started_date_c' => 
+    array (
+    ),
+    'submitted_date_c' => 
+    array (
+    ),
+    'expected_completion_date_c' => 
+    array (
+    ),
+    'actual_completion_date_c' => 
+    array (
+    ),
+    'agree_colla_prty_c' => 
+    array (
+    ),
+    'agree_resource_prvd_c' => 
+    array (
+    ),
+    'agree_resource_owner_c' => 
+    array (
+    ),
+    'assist_authority_c' => 
     array (
     ),
     'date_entered' => 
     array (
     ),
     'date_modified' => 
-    array (
-    ),
-    'date_closed' => 
     array (
     ),
     'tag' => 

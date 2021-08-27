@@ -1,6 +1,6 @@
 <?php
 // WARNING: The contents of this file are auto-generated.
-$mod_strings['LBL_ACCOUNT_NAME'] = 'Organisation Name:';
+$mod_strings['LBL_ACCOUNT_NAME'] = 'Organisation';
 $mod_strings['LBL_ACCOUNT_ID'] = 'Organisation ID:';
 $mod_strings['LBL_CREATED_ACCOUNT'] = 'Created a new Organisation';
 $mod_strings['LBL_EXISTING_ACCOUNT'] = 'Used an existing Organisation';
@@ -15,3 +15,14 @@ $mod_strings['LBL_OPPORTUNITY_ROLE_ID'] = 'Application Role ID:';
 $mod_strings['LBL_OPPORTUNITY_ROLE'] = 'Application Role';
 $mod_strings['LNK_NEW_OPPORTUNITY'] = 'Create Application';
 $mod_strings['LBL_OPPORTUNITIES'] = 'Applications';
+$mod_strings['LBL_LINKEDIN'] = 'LinkedIn Account';
+$mod_strings['LBL_UUID'] = 'uuid';
+$mod_strings['LBL_OPPORTUNITIES_SUBPANEL_TITLE'] = 'Applications';
+$mod_strings['LBL_RECORDVIEW_PANEL1'] = 'Record Info';
+$mod_strings['LBL_RECORD_BODY'] = 'Overview';
+$mod_strings['LBL_RECORD_SHOWMORE'] = 'More Info';
+$mod_strings['LBL_MOBILE_PHONE'] = 'Mobile Phone:';
+$mod_strings['LBL_HOME_PHONE'] = 'Home Phone:';
+$mod_strings['LBL_FAX_PHONE'] = 'Fax Phone:';
+$mod_strings['LBL_TITLE'] = 'Job Title:';
+$mod_strings['LBL_PRIMARY_ADDRESS_CITY'] = 'City';

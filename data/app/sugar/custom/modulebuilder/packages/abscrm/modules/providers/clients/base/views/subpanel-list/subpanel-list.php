@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-10 01:29:06
+// created: 2021-08-24 18:00:50
 $viewdefs['ABS1_providers']['base']['view']['subpanel-list'] = array (
   'panels' => 
   array (
@@ -27,17 +27,6 @@ $viewdefs['ABS1_providers']['base']['view']['subpanel-list'] = array (
         ),
         2 => 
         array (
-          'name' => 'organisation',
-          'label' => 'LBL_ORGANISATION',
-          'enabled' => true,
-          'readonly' => false,
-          'id' => 'ACCOUNT_ID_C',
-          'link' => true,
-          'sortable' => false,
-          'default' => true,
-        ),
-        3 => 
-        array (
           'name' => 'contact',
           'label' => 'LBL_CONTACT',
           'enabled' => true,
@@ -47,12 +36,24 @@ $viewdefs['ABS1_providers']['base']['view']['subpanel-list'] = array (
           'sortable' => false,
           'default' => true,
         ),
+        3 => 
+        array (
+          'name' => 'account',
+          'label' => 'LBL_ACCOUNT',
+          'enabled' => true,
+          'readonly' => false,
+          'id' => 'ACCOUNT_ID_C',
+          'link' => true,
+          'sortable' => false,
+          'default' => true,
+        ),
         4 => 
         array (
-          'label' => 'LBL_DATE_MODIFIED',
+          'name' => 'mat_c',
+          'label' => 'LBL_MAT_C',
           'enabled' => true,
+          'readonly' => false,
           'default' => true,
-          'name' => 'date_modified',
         ),
       ),
     ),

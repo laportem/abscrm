@@ -47,7 +47,7 @@ $vardefs = array (
     ),
     'identification_type_c' => 
     array (
-      'required' => false,
+      'required' => true,
       'readonly' => false,
       'name' => 'identification_type_c',
       'vname' => 'LBL_IDENTIFICATION_TYPE_C',
@@ -74,7 +74,7 @@ $vardefs = array (
     ),
     'issuing_country_c' => 
     array (
-      'required' => false,
+      'required' => true,
       'readonly' => false,
       'name' => 'issuing_country_c',
       'vname' => 'LBL_ISSUING_COUNTRY_C',
@@ -129,7 +129,7 @@ $vardefs = array (
     ),
     'valid_to_c' => 
     array (
-      'required' => false,
+      'required' => true,
       'readonly' => false,
       'name' => 'valid_to_c',
       'vname' => 'LBL_VALID_TO_C',
@@ -212,7 +212,7 @@ $vardefs = array (
     'uuid_c' => 
     array (
       'required' => false,
-      'readonly' => false,
+      'readonly' => true,
       'name' => 'uuid_c',
       'vname' => 'LBL_UUID_C',
       'type' => 'varchar',

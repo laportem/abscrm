@@ -29,9 +29,9 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'abscrm',
-  'published_date' => '2021-08-11 08:16:42',
+  'published_date' => '2021-08-26 20:08:16',
   'type' => 'module',
-  'version' => 1628669802,
+  'version' => 1630008496,
   'remove_tables' => 'prompt',
 );
 
@@ -42,26 +42,47 @@ $installdefs = array (
   array (
     0 => 
     array (
+      'module' => 'ABS1_resources',
+      'class' => 'ABS1_resources',
+      'path' => 'modules/ABS1_resources/ABS1_resources.php',
+      'tab' => true,
+    ),
+    1 => 
+    array (
+      'module' => 'ABS1_projectmembers',
+      'class' => 'ABS1_projectmembers',
+      'path' => 'modules/ABS1_projectmembers/ABS1_projectmembers.php',
+      'tab' => true,
+    ),
+    2 => 
+    array (
       'module' => 'ABS1_sponsors',
       'class' => 'ABS1_sponsors',
       'path' => 'modules/ABS1_sponsors/ABS1_sponsors.php',
       'tab' => true,
     ),
-    1 => 
+    3 => 
+    array (
+      'module' => 'ABS1_preapplications',
+      'class' => 'ABS1_preapplications',
+      'path' => 'modules/ABS1_preapplications/ABS1_preapplications.php',
+      'tab' => true,
+    ),
+    4 => 
     array (
       'module' => 'ABS1_identifications',
       'class' => 'ABS1_identifications',
       'path' => 'modules/ABS1_identifications/ABS1_identifications.php',
       'tab' => true,
     ),
-    2 => 
+    5 => 
     array (
       'module' => 'ABS1_providers',
       'class' => 'ABS1_providers',
       'path' => 'modules/ABS1_providers/ABS1_providers.php',
       'tab' => true,
     ),
-    3 => 
+    6 => 
     array (
       'module' => 'ABS1_collaborators',
       'class' => 'ABS1_collaborators',
@@ -73,25 +94,35 @@ $installdefs = array (
   array (
     0 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_sponsors_opportunities_Opportunities.php',
+      'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_resources_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
     1 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_identifications_contacts_Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_projectmembers_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     2 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_identifications_accounts_Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_sponsors_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     3 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_preapplications_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
+    ),
+    4 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_identifications_contacts_Contacts.php',
+      'to_module' => 'Contacts',
+    ),
+    5 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_providers_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
-    4 => 
+    6 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/layoutdefs/abs1_collaborators_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
@@ -101,21 +132,29 @@ $installdefs = array (
   array (
     0 => 
     array (
-      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_sponsors_opportunitiesMetaData.php',
+      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_resources_opportunitiesMetaData.php',
     ),
     1 => 
     array (
-      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_identifications_contactsMetaData.php',
+      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_projectmembers_opportunitiesMetaData.php',
     ),
     2 => 
     array (
-      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_identifications_accountsMetaData.php',
+      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_sponsors_opportunitiesMetaData.php',
     ),
     3 => 
     array (
-      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_providers_opportunitiesMetaData.php',
+      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_preapplications_opportunitiesMetaData.php',
     ),
     4 => 
+    array (
+      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_identifications_contactsMetaData.php',
+    ),
+    5 => 
+    array (
+      'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_providers_opportunitiesMetaData.php',
+    ),
+    6 => 
     array (
       'meta_data' => '<basepath>/SugarModules/relationships/relationships/abs1_collaborators_opportunitiesMetaData.php',
     ),
@@ -124,20 +163,35 @@ $installdefs = array (
   array (
     0 => 
     array (
+      'from' => '<basepath>/SugarModules/modules/ABS1_resources',
+      'to' => 'modules/ABS1_resources',
+    ),
+    1 => 
+    array (
+      'from' => '<basepath>/SugarModules/modules/ABS1_projectmembers',
+      'to' => 'modules/ABS1_projectmembers',
+    ),
+    2 => 
+    array (
       'from' => '<basepath>/SugarModules/modules/ABS1_sponsors',
       'to' => 'modules/ABS1_sponsors',
     ),
-    1 => 
+    3 => 
+    array (
+      'from' => '<basepath>/SugarModules/modules/ABS1_preapplications',
+      'to' => 'modules/ABS1_preapplications',
+    ),
+    4 => 
     array (
       'from' => '<basepath>/SugarModules/modules/ABS1_identifications',
       'to' => 'modules/ABS1_identifications',
     ),
-    2 => 
+    5 => 
     array (
       'from' => '<basepath>/SugarModules/modules/ABS1_providers',
       'to' => 'modules/ABS1_providers',
     ),
-    3 => 
+    6 => 
     array (
       'from' => '<basepath>/SugarModules/modules/ABS1_collaborators',
       'to' => 'modules/ABS1_collaborators',
@@ -375,1142 +429,1142 @@ $installdefs = array (
     ),
     38 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'en_us',
     ),
     39 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'bg_BG',
     ),
     40 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'cs_CZ',
     ),
     41 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'da_DK',
     ),
     42 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'de_DE',
     ),
     43 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'el_EL',
     ),
     44 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'es_ES',
     ),
     45 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'fr_FR',
     ),
     46 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'he_IL',
     ),
     47 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'hu_HU',
     ),
     48 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'hr_HR',
     ),
     49 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'it_it',
     ),
     50 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'lt_LT',
     ),
     51 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'ja_JP',
     ),
     52 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'ko_KR',
     ),
     53 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'lv_LV',
     ),
     54 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'nb_NO',
     ),
     55 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'nl_NL',
     ),
     56 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'pl_PL',
     ),
     57 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'pt_PT',
     ),
     58 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'ro_RO',
     ),
     59 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'ru_RU',
     ),
     60 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'sv_SE',
     ),
     61 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'th_TH',
     ),
     62 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'tr_TR',
     ),
     63 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'zh_TW',
     ),
     64 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'zh_CN',
     ),
     65 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'pt_BR',
     ),
     66 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'ca_ES',
     ),
     67 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'en_UK',
     ),
     68 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'sr_RS',
     ),
     69 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'sk_SK',
     ),
     70 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'sq_AL',
     ),
     71 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'et_EE',
     ),
     72 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'es_LA',
     ),
     73 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'fi_FI',
     ),
     74 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'ar_SA',
     ),
     75 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
       'language' => 'uk_UA',
     ),
     76 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'en_us',
     ),
     77 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'bg_BG',
     ),
     78 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'cs_CZ',
     ),
     79 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'da_DK',
     ),
     80 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'de_DE',
     ),
     81 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'el_EL',
     ),
     82 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'es_ES',
     ),
     83 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'fr_FR',
     ),
     84 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'he_IL',
     ),
     85 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'hu_HU',
     ),
     86 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'hr_HR',
     ),
     87 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'it_it',
     ),
     88 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'lt_LT',
     ),
     89 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ja_JP',
     ),
     90 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ko_KR',
     ),
     91 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'lv_LV',
     ),
     92 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'nb_NO',
     ),
     93 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'nl_NL',
     ),
     94 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'pl_PL',
     ),
     95 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'pt_PT',
     ),
     96 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ro_RO',
     ),
     97 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ru_RU',
     ),
     98 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'sv_SE',
     ),
     99 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'th_TH',
     ),
     100 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'tr_TR',
     ),
     101 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'zh_TW',
     ),
     102 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'zh_CN',
     ),
     103 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'pt_BR',
     ),
     104 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ca_ES',
     ),
     105 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'en_UK',
     ),
     106 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'sr_RS',
     ),
     107 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'sk_SK',
     ),
     108 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'sq_AL',
     ),
     109 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'et_EE',
     ),
     110 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'es_LA',
     ),
     111 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'fi_FI',
     ),
     112 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ar_SA',
     ),
     113 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'uk_UA',
     ),
     114 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'en_us',
     ),
     115 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'bg_BG',
     ),
     116 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'cs_CZ',
     ),
     117 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'da_DK',
     ),
     118 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'de_DE',
     ),
     119 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'el_EL',
     ),
     120 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'es_ES',
     ),
     121 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'fr_FR',
     ),
     122 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'he_IL',
     ),
     123 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'hu_HU',
     ),
     124 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'hr_HR',
     ),
     125 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'it_it',
     ),
     126 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'lt_LT',
     ),
     127 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'ja_JP',
     ),
     128 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'ko_KR',
     ),
     129 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'lv_LV',
     ),
     130 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'nb_NO',
     ),
     131 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'nl_NL',
     ),
     132 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'pl_PL',
     ),
     133 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'pt_PT',
     ),
     134 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'ro_RO',
     ),
     135 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'ru_RU',
     ),
     136 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'sv_SE',
     ),
     137 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'th_TH',
     ),
     138 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'tr_TR',
     ),
     139 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'zh_TW',
     ),
     140 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'zh_CN',
     ),
     141 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'pt_BR',
     ),
     142 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'ca_ES',
     ),
     143 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'en_UK',
     ),
     144 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'sr_RS',
     ),
     145 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'sk_SK',
     ),
     146 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'sq_AL',
     ),
     147 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'et_EE',
     ),
     148 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'es_LA',
     ),
     149 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'fi_FI',
     ),
     150 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'ar_SA',
     ),
     151 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
       'language' => 'uk_UA',
     ),
     152 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'en_us',
     ),
     153 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'bg_BG',
     ),
     154 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'cs_CZ',
     ),
     155 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'da_DK',
     ),
     156 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'de_DE',
     ),
     157 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'el_EL',
     ),
     158 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'es_ES',
     ),
     159 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'fr_FR',
     ),
     160 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'he_IL',
     ),
     161 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'hu_HU',
     ),
     162 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'hr_HR',
     ),
     163 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'it_it',
     ),
     164 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'lt_LT',
     ),
     165 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ja_JP',
     ),
     166 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ko_KR',
     ),
     167 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'lv_LV',
     ),
     168 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'nb_NO',
     ),
     169 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'nl_NL',
     ),
     170 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'pl_PL',
     ),
     171 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'pt_PT',
     ),
     172 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ro_RO',
     ),
     173 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ru_RU',
     ),
     174 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'sv_SE',
     ),
     175 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'th_TH',
     ),
     176 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'tr_TR',
     ),
     177 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'zh_TW',
     ),
     178 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'zh_CN',
     ),
     179 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'pt_BR',
     ),
     180 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ca_ES',
     ),
     181 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'en_UK',
     ),
     182 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'sr_RS',
     ),
     183 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'sk_SK',
     ),
     184 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'sq_AL',
     ),
     185 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'et_EE',
     ),
     186 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'es_LA',
     ),
     187 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'fi_FI',
     ),
     188 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'ar_SA',
     ),
     189 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
       'language' => 'uk_UA',
     ),
     190 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'en_us',
     ),
     191 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'bg_BG',
     ),
     192 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'cs_CZ',
     ),
     193 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'da_DK',
     ),
     194 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'de_DE',
     ),
     195 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'el_EL',
     ),
     196 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'es_ES',
     ),
     197 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'fr_FR',
     ),
     198 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'he_IL',
     ),
     199 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'hu_HU',
     ),
     200 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'hr_HR',
     ),
     201 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'it_it',
     ),
     202 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'lt_LT',
     ),
     203 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'ja_JP',
     ),
     204 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'ko_KR',
     ),
     205 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'lv_LV',
     ),
     206 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'nb_NO',
     ),
     207 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'nl_NL',
     ),
     208 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'pl_PL',
     ),
     209 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'pt_PT',
     ),
     210 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'ro_RO',
     ),
     211 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'ru_RU',
     ),
     212 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'sv_SE',
     ),
     213 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'th_TH',
     ),
     214 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'tr_TR',
     ),
     215 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'zh_TW',
     ),
     216 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'zh_CN',
     ),
     217 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'pt_BR',
     ),
     218 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'ca_ES',
     ),
     219 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'en_UK',
     ),
     220 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'sr_RS',
     ),
     221 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'sk_SK',
     ),
     222 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'sq_AL',
     ),
     223 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'et_EE',
     ),
     224 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'es_LA',
     ),
     225 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'fi_FI',
     ),
     226 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'ar_SA',
     ),
     227 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
       'language' => 'uk_UA',
     ),
     228 => 
@@ -1743,689 +1797,1601 @@ $installdefs = array (
     ),
     266 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'en_us',
     ),
     267 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'bg_BG',
     ),
     268 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'cs_CZ',
     ),
     269 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'da_DK',
     ),
     270 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'de_DE',
     ),
     271 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'el_EL',
     ),
     272 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'es_ES',
     ),
     273 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'fr_FR',
     ),
     274 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'he_IL',
     ),
     275 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'hu_HU',
     ),
     276 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'hr_HR',
     ),
     277 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'it_it',
     ),
     278 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'lt_LT',
     ),
     279 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'ja_JP',
     ),
     280 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'ko_KR',
     ),
     281 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'lv_LV',
     ),
     282 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'nb_NO',
     ),
     283 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'nl_NL',
     ),
     284 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'pl_PL',
     ),
     285 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'pt_PT',
     ),
     286 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'ro_RO',
     ),
     287 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'ru_RU',
     ),
     288 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'sv_SE',
     ),
     289 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'th_TH',
     ),
     290 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'tr_TR',
     ),
     291 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'zh_TW',
     ),
     292 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'zh_CN',
     ),
     293 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'pt_BR',
     ),
     294 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'ca_ES',
     ),
     295 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'en_UK',
     ),
     296 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'sr_RS',
     ),
     297 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'sk_SK',
     ),
     298 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'sq_AL',
     ),
     299 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'et_EE',
     ),
     300 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'es_LA',
     ),
     301 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'fi_FI',
     ),
     302 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'ar_SA',
     ),
     303 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
-      'to_module' => 'ABS1_providers',
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
       'language' => 'uk_UA',
     ),
     304 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
-      'to_module' => 'Opportunities',
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
       'language' => 'en_us',
     ),
     305 => 
     array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'bg_BG',
+    ),
+    306 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'cs_CZ',
+    ),
+    307 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'da_DK',
+    ),
+    308 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'de_DE',
+    ),
+    309 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'el_EL',
+    ),
+    310 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'es_ES',
+    ),
+    311 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'fr_FR',
+    ),
+    312 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'he_IL',
+    ),
+    313 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'hu_HU',
+    ),
+    314 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'hr_HR',
+    ),
+    315 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'it_it',
+    ),
+    316 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'lt_LT',
+    ),
+    317 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'ja_JP',
+    ),
+    318 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'ko_KR',
+    ),
+    319 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'lv_LV',
+    ),
+    320 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'nb_NO',
+    ),
+    321 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'nl_NL',
+    ),
+    322 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'pl_PL',
+    ),
+    323 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'pt_PT',
+    ),
+    324 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'ro_RO',
+    ),
+    325 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'ru_RU',
+    ),
+    326 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'sv_SE',
+    ),
+    327 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'th_TH',
+    ),
+    328 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'tr_TR',
+    ),
+    329 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'zh_TW',
+    ),
+    330 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'zh_CN',
+    ),
+    331 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'pt_BR',
+    ),
+    332 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'ca_ES',
+    ),
+    333 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'en_UK',
+    ),
+    334 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'sr_RS',
+    ),
+    335 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'sk_SK',
+    ),
+    336 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'sq_AL',
+    ),
+    337 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'et_EE',
+    ),
+    338 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'es_LA',
+    ),
+    339 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'fi_FI',
+    ),
+    340 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'ar_SA',
+    ),
+    341 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Contacts.php',
+      'to_module' => 'Contacts',
+      'language' => 'uk_UA',
+    ),
+    342 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'en_us',
+    ),
+    343 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'bg_BG',
+    ),
+    344 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'cs_CZ',
+    ),
+    345 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'da_DK',
+    ),
+    346 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'de_DE',
+    ),
+    347 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'el_EL',
+    ),
+    348 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'es_ES',
+    ),
+    349 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'fr_FR',
+    ),
+    350 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'he_IL',
+    ),
+    351 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'hu_HU',
+    ),
+    352 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'hr_HR',
+    ),
+    353 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'it_it',
+    ),
+    354 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'lt_LT',
+    ),
+    355 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'ja_JP',
+    ),
+    356 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'ko_KR',
+    ),
+    357 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'lv_LV',
+    ),
+    358 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'nb_NO',
+    ),
+    359 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'nl_NL',
+    ),
+    360 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'pl_PL',
+    ),
+    361 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'pt_PT',
+    ),
+    362 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'ro_RO',
+    ),
+    363 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'ru_RU',
+    ),
+    364 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'sv_SE',
+    ),
+    365 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'th_TH',
+    ),
+    366 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'tr_TR',
+    ),
+    367 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'zh_TW',
+    ),
+    368 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'zh_CN',
+    ),
+    369 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'pt_BR',
+    ),
+    370 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'ca_ES',
+    ),
+    371 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'en_UK',
+    ),
+    372 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'sr_RS',
+    ),
+    373 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'sk_SK',
+    ),
+    374 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'sq_AL',
+    ),
+    375 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'et_EE',
+    ),
+    376 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'es_LA',
+    ),
+    377 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'fi_FI',
+    ),
+    378 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'ar_SA',
+    ),
+    379 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+      'language' => 'uk_UA',
+    ),
+    380 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'en_us',
+    ),
+    381 => 
+    array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'bg_BG',
     ),
-    306 => 
+    382 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'cs_CZ',
     ),
-    307 => 
+    383 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'da_DK',
     ),
-    308 => 
+    384 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'de_DE',
     ),
-    309 => 
+    385 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'el_EL',
     ),
-    310 => 
+    386 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'es_ES',
     ),
-    311 => 
+    387 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'fr_FR',
     ),
-    312 => 
+    388 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'he_IL',
     ),
-    313 => 
+    389 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'hu_HU',
     ),
-    314 => 
+    390 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'hr_HR',
     ),
-    315 => 
+    391 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'it_it',
     ),
-    316 => 
+    392 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'lt_LT',
     ),
-    317 => 
+    393 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'ja_JP',
     ),
-    318 => 
+    394 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'ko_KR',
     ),
-    319 => 
+    395 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'lv_LV',
     ),
-    320 => 
+    396 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'nb_NO',
     ),
-    321 => 
+    397 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'nl_NL',
     ),
-    322 => 
+    398 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'pl_PL',
     ),
-    323 => 
+    399 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'pt_PT',
     ),
-    324 => 
+    400 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'ro_RO',
     ),
-    325 => 
+    401 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'ru_RU',
     ),
-    326 => 
+    402 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'sv_SE',
     ),
-    327 => 
+    403 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'th_TH',
     ),
-    328 => 
+    404 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'tr_TR',
     ),
-    329 => 
+    405 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'zh_TW',
     ),
-    330 => 
+    406 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'zh_CN',
     ),
-    331 => 
+    407 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'pt_BR',
     ),
-    332 => 
+    408 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'ca_ES',
     ),
-    333 => 
+    409 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'en_UK',
     ),
-    334 => 
+    410 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'sr_RS',
     ),
-    335 => 
+    411 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'sk_SK',
     ),
-    336 => 
+    412 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'sq_AL',
     ),
-    337 => 
+    413 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'et_EE',
     ),
-    338 => 
+    414 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'es_LA',
     ),
-    339 => 
+    415 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'fi_FI',
     ),
-    340 => 
+    416 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'ar_SA',
     ),
-    341 => 
+    417 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
       'to_module' => 'Opportunities',
       'language' => 'uk_UA',
     ),
-    342 => 
+    418 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'en_us',
+    ),
+    419 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'bg_BG',
+    ),
+    420 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'cs_CZ',
+    ),
+    421 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'da_DK',
+    ),
+    422 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'de_DE',
+    ),
+    423 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'el_EL',
+    ),
+    424 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'es_ES',
+    ),
+    425 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'fr_FR',
+    ),
+    426 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'he_IL',
+    ),
+    427 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'hu_HU',
+    ),
+    428 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'hr_HR',
+    ),
+    429 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'it_it',
+    ),
+    430 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'lt_LT',
+    ),
+    431 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'ja_JP',
+    ),
+    432 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'ko_KR',
+    ),
+    433 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'lv_LV',
+    ),
+    434 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'nb_NO',
+    ),
+    435 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'nl_NL',
+    ),
+    436 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'pl_PL',
+    ),
+    437 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'pt_PT',
+    ),
+    438 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'ro_RO',
+    ),
+    439 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'ru_RU',
+    ),
+    440 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'sv_SE',
+    ),
+    441 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'th_TH',
+    ),
+    442 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'tr_TR',
+    ),
+    443 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'zh_TW',
+    ),
+    444 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'zh_CN',
+    ),
+    445 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'pt_BR',
+    ),
+    446 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'ca_ES',
+    ),
+    447 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'en_UK',
+    ),
+    448 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'sr_RS',
+    ),
+    449 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'sk_SK',
+    ),
+    450 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'sq_AL',
+    ),
+    451 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'et_EE',
+    ),
+    452 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'es_LA',
+    ),
+    453 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'fi_FI',
+    ),
+    454 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'ar_SA',
+    ),
+    455 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/ABS1_providers.php',
+      'to_module' => 'ABS1_providers',
+      'language' => 'uk_UA',
+    ),
+    456 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'en_us',
+    ),
+    457 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'bg_BG',
+    ),
+    458 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'cs_CZ',
+    ),
+    459 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'da_DK',
+    ),
+    460 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'de_DE',
+    ),
+    461 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'el_EL',
+    ),
+    462 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'es_ES',
+    ),
+    463 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'fr_FR',
+    ),
+    464 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'he_IL',
+    ),
+    465 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'hu_HU',
+    ),
+    466 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'hr_HR',
+    ),
+    467 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'it_it',
+    ),
+    468 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'lt_LT',
+    ),
+    469 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'ja_JP',
+    ),
+    470 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'ko_KR',
+    ),
+    471 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'lv_LV',
+    ),
+    472 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'nb_NO',
+    ),
+    473 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'nl_NL',
+    ),
+    474 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'pl_PL',
+    ),
+    475 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'pt_PT',
+    ),
+    476 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'ro_RO',
+    ),
+    477 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'ru_RU',
+    ),
+    478 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'sv_SE',
+    ),
+    479 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'th_TH',
+    ),
+    480 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'tr_TR',
+    ),
+    481 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'zh_TW',
+    ),
+    482 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'zh_CN',
+    ),
+    483 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'pt_BR',
+    ),
+    484 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'ca_ES',
+    ),
+    485 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'en_UK',
+    ),
+    486 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'sr_RS',
+    ),
+    487 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'sk_SK',
+    ),
+    488 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'sq_AL',
+    ),
+    489 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'et_EE',
+    ),
+    490 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'es_LA',
+    ),
+    491 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'fi_FI',
+    ),
+    492 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'ar_SA',
+    ),
+    493 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/Opportunities.php',
+      'to_module' => 'Opportunities',
+      'language' => 'uk_UA',
+    ),
+    494 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'en_us',
     ),
-    343 => 
+    495 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'bg_BG',
     ),
-    344 => 
+    496 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'cs_CZ',
     ),
-    345 => 
+    497 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'da_DK',
     ),
-    346 => 
+    498 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'de_DE',
     ),
-    347 => 
+    499 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'el_EL',
     ),
-    348 => 
+    500 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'es_ES',
     ),
-    349 => 
+    501 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'fr_FR',
     ),
-    350 => 
+    502 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'he_IL',
     ),
-    351 => 
+    503 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'hu_HU',
     ),
-    352 => 
+    504 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'hr_HR',
     ),
-    353 => 
+    505 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'it_it',
     ),
-    354 => 
+    506 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'lt_LT',
     ),
-    355 => 
+    507 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'ja_JP',
     ),
-    356 => 
+    508 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'ko_KR',
     ),
-    357 => 
+    509 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'lv_LV',
     ),
-    358 => 
+    510 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'nb_NO',
     ),
-    359 => 
+    511 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'nl_NL',
     ),
-    360 => 
+    512 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'pl_PL',
     ),
-    361 => 
+    513 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'pt_PT',
     ),
-    362 => 
+    514 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'ro_RO',
     ),
-    363 => 
+    515 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'ru_RU',
     ),
-    364 => 
+    516 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'sv_SE',
     ),
-    365 => 
+    517 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'th_TH',
     ),
-    366 => 
+    518 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'tr_TR',
     ),
-    367 => 
+    519 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'zh_TW',
     ),
-    368 => 
+    520 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'zh_CN',
     ),
-    369 => 
+    521 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'pt_BR',
     ),
-    370 => 
+    522 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'ca_ES',
     ),
-    371 => 
+    523 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'en_UK',
     ),
-    372 => 
+    524 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'sr_RS',
     ),
-    373 => 
+    525 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'sk_SK',
     ),
-    374 => 
+    526 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'sq_AL',
     ),
-    375 => 
+    527 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'et_EE',
     ),
-    376 => 
+    528 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'es_LA',
     ),
-    377 => 
+    529 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'fi_FI',
     ),
-    378 => 
+    530 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'ar_SA',
     ),
-    379 => 
+    531 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/language/ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
       'language' => 'uk_UA',
     ),
-    380 => 
+    532 => 
     array (
       'from' => '<basepath>/SugarModules/language/application/en_us.lang.php',
       'to_module' => 'application',
@@ -2436,50 +3402,70 @@ $installdefs = array (
   array (
     0 => 
     array (
-      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_sponsors_opportunities_Opportunities.php',
+      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_resources_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
     1 => 
     array (
-      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_sponsors_opportunities_Opportunities.php',
+      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_resources_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
     2 => 
     array (
-      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_identifications_contacts_Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_projectmembers_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     3 => 
     array (
-      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_identifications_accounts_Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_projectmembers_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     4 => 
     array (
-      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_identifications_contacts_Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_sponsors_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     5 => 
     array (
-      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_identifications_accounts_Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_sponsors_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     6 => 
     array (
-      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_providers_opportunities_Opportunities.php',
+      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_preapplications_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
     7 => 
     array (
-      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_providers_opportunities_Opportunities.php',
+      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_preapplications_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
     8 => 
     array (
+      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_identifications_contacts_Contacts.php',
+      'to_module' => 'Contacts',
+    ),
+    9 => 
+    array (
+      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_identifications_contacts_Contacts.php',
+      'to_module' => 'Contacts',
+    ),
+    10 => 
+    array (
+      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_providers_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
+    ),
+    11 => 
+    array (
+      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_providers_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
+    ),
+    12 => 
+    array (
       'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/abs1_collaborators_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
-    9 => 
+    13 => 
     array (
       'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/abs1_collaborators_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
@@ -2489,50 +3475,70 @@ $installdefs = array (
   array (
     0 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_sponsors_opportunities_Opportunities.php',
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_resources_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
     1 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_sponsors_opportunities_ABS1_sponsors.php',
-      'to_module' => 'ABS1_sponsors',
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_resources_opportunities_ABS1_resources.php',
+      'to_module' => 'ABS1_resources',
     ),
     2 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_identifications_contacts_Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_projectmembers_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     3 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_identifications_contacts_ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_projectmembers_opportunities_ABS1_projectmembers.php',
+      'to_module' => 'ABS1_projectmembers',
     ),
     4 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_identifications_accounts_Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_sponsors_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     5 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_identifications_accounts_ABS1_identifications.php',
-      'to_module' => 'ABS1_identifications',
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_sponsors_opportunities_ABS1_sponsors.php',
+      'to_module' => 'ABS1_sponsors',
     ),
     6 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_providers_opportunities_Opportunities.php',
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_preapplications_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
     7 => 
     array (
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_preapplications_opportunities_ABS1_preapplications.php',
+      'to_module' => 'ABS1_preapplications',
+    ),
+    8 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_identifications_contacts_Contacts.php',
+      'to_module' => 'Contacts',
+    ),
+    9 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_identifications_contacts_ABS1_identifications.php',
+      'to_module' => 'ABS1_identifications',
+    ),
+    10 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_providers_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
+    ),
+    11 => 
+    array (
       'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_providers_opportunities_ABS1_providers.php',
       'to_module' => 'ABS1_providers',
     ),
-    8 => 
+    12 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_collaborators_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
-    9 => 
+    13 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/vardefs/abs1_collaborators_opportunities_ABS1_collaborators.php',
       'to_module' => 'ABS1_collaborators',
@@ -2570,30 +3576,52 @@ $installdefs = array (
       array (
       ),
     ),
+    5 => 
+    array (
+      'additional_fields' => 
+      array (
+      ),
+    ),
+    6 => 
+    array (
+      'additional_fields' => 
+      array (
+      ),
+    ),
   ),
   'wireless_subpanels' => 
   array (
     0 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_sponsors_opportunities_Opportunities.php',
+      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_resources_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
     1 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_identifications_contacts_Contacts.php',
-      'to_module' => 'Contacts',
+      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_projectmembers_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     2 => 
     array (
-      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_identifications_accounts_Accounts.php',
-      'to_module' => 'Accounts',
+      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_sponsors_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
     ),
     3 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_preapplications_opportunities_Opportunities.php',
+      'to_module' => 'Opportunities',
+    ),
+    4 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_identifications_contacts_Contacts.php',
+      'to_module' => 'Contacts',
+    ),
+    5 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_providers_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',
     ),
-    4 => 
+    6 => 
     array (
       'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/abs1_collaborators_opportunities_Opportunities.php',
       'to_module' => 'Opportunities',

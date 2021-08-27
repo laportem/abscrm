@@ -1,0 +1,63 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'ABS1_providers',
+    'varName' => 'ABS1_providers',
+    'orderBy' => 'abs1_providers.name',
+    'whereClauses' => array (
+  'name' => 'abs1_providers.name',
+),
+    'searchInputs' => array (
+  0 => 'abs1_providers_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'readonly' => false,
+    'default' => true,
+    'label' => 'LBL_NAME',
+    'width' => 10,
+  ),
+  'PROVIDER_TYPE' => 
+  array (
+    'readonly' => false,
+    'type' => 'enum',
+    'default' => true,
+    'label' => 'LBL_PROVIDER_TYPE',
+    'width' => 10,
+  ),
+  'CONTACT' => 
+  array (
+    'readonly' => false,
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_CONTACT',
+    'id' => 'CONTACT_ID_C',
+    'link' => true,
+    'width' => 10,
+    'default' => true,
+  ),
+  'ACCOUNT' => 
+  array (
+    'readonly' => false,
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_ACCOUNT',
+    'id' => 'ACCOUNT_ID_C',
+    'link' => true,
+    'width' => 10,
+    'default' => true,
+  ),
+  'MAT_C' => 
+  array (
+    'readonly' => false,
+    'type' => 'enum',
+    'default' => true,
+    'label' => 'LBL_MAT_C',
+    'width' => 10,
+  ),
+),
+);

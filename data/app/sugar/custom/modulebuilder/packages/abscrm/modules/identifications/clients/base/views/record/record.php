@@ -164,17 +164,17 @@ array (
             'label' => 'LBL_RECORD_BODY',
             'columns' => 2,
             'placeholders' => true,
-            'newTab' => true,
+            'newTab' => false,
             'panelDefault' => 'expanded',
             'fields' => 
             array (
               0 => 
               array (
                 'name' => 'abs1_identifications_contacts_name',
+                'label' => 'LBL_CONTACT',
               ),
               1 => 
               array (
-                'name' => 'abs1_identifications_accounts_name',
               ),
               2 => 
               array (
@@ -233,8 +233,8 @@ array (
             'hide' => true,
             'columns' => 2,
             'placeholders' => true,
-            'newTab' => true,
-            'panelDefault' => 'expanded',
+            'newTab' => false,
+            'panelDefault' => 'collapsed',
             'fields' => 
             array (
               0 => 
@@ -306,7 +306,7 @@ array (
               ),
               4 => 
               array (
-                'readonly' => false,
+                'readonly' => true,
                 'name' => 'uuid_c',
                 'label' => 'LBL_UUID_C',
               ),
@@ -318,7 +318,7 @@ array (
         ),
         'templateMeta' => 
         array (
-          'useTabs' => true,
+          'useTabs' => false,
         ),
       ),
     ),

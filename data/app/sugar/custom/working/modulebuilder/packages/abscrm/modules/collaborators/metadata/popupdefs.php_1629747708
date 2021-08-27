@@ -1,0 +1,32 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'ABS1_collaborators',
+    'varName' => 'ABS1_collaborators',
+    'orderBy' => 'abs1_collaborators.name',
+    'whereClauses' => array (
+  'collaborator_type' => 'abs1_collaborators.collaborator_type',
+  'local_c' => 'abs1_collaborators.local_c',
+),
+    'searchInputs' => array (
+  4 => 'collaborator_type',
+  5 => 'local_c',
+),
+    'searchdefs' => array (
+  'collaborator_type' => 
+  array (
+    'readonly' => false,
+    'type' => 'enum',
+    'label' => 'LBL_COLLABORATOR_TYPE',
+    'width' => '10',
+    'name' => 'collaborator_type',
+  ),
+  'local_c' => 
+  array (
+    'readonly' => false,
+    'type' => 'enum',
+    'label' => 'LBL_LOCAL_C',
+    'width' => '10',
+    'name' => 'local_c',
+  ),
+),
+);

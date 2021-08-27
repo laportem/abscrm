@@ -32,20 +32,6 @@ array (
       'vname' => 'LBL_PROVIDER_TYPE',
       'width' => 10,
     ),
-    'organisation' => 
-    array (
-      'readonly' => false,
-      'type' => 'relate',
-      'studio' => 'visible',
-      'vname' => 'LBL_ORGANISATION',
-      'id' => 'ACCOUNT_ID_C',
-      'link' => true,
-      'width' => 10,
-      'default' => true,
-      'widget_class' => 'SubPanelDetailViewLink',
-      'target_module' => 'Accounts',
-      'target_record_key' => 'account_id_c',
-    ),
     'contact' => 
     array (
       'readonly' => false,
@@ -60,11 +46,27 @@ array (
       'target_module' => 'Contacts',
       'target_record_key' => 'contact_id_c',
     ),
-    'date_modified' => 
+    'account' => 
     array (
-      'vname' => 'LBL_DATE_MODIFIED',
+      'readonly' => false,
+      'type' => 'relate',
+      'studio' => 'visible',
+      'vname' => 'LBL_ACCOUNT',
+      'id' => 'ACCOUNT_ID_C',
+      'link' => true,
       'width' => 10,
       'default' => true,
+      'widget_class' => 'SubPanelDetailViewLink',
+      'target_module' => 'Accounts',
+      'target_record_key' => 'account_id_c',
+    ),
+    'mat_c' => 
+    array (
+      'readonly' => false,
+      'type' => 'enum',
+      'default' => true,
+      'vname' => 'LBL_MAT_C',
+      'width' => 10,
     ),
     'edit_button' => 
     array (

@@ -183,24 +183,32 @@ array (
             array (
               0 => 
               array (
+                'readonly' => false,
+                'name' => 'purpose_c',
+                'label' => 'LBL_PURPOSE',
+              ),
+              1 => 
+              array (
+                'readonly' => false,
+                'name' => 'applicant_type_c',
+                'label' => 'LBL_APPLICANT_TYPE_C',
+              ),
+              2 => 
+              array (
                 'name' => 'account_name',
                 'related_fields' => 
                 array (
                   0 => 'account_id',
                 ),
               ),
-              1 => 
+              3 => 
               array (
-                'name' => 'date_closed',
-                'type' => 'date-cascade',
-                'label' => 'LBL_LIST_DATE_CLOSED',
-                'disable_field' => 
-                array (
-                  0 => 'total_revenue_line_items',
-                  1 => 'closed_revenue_line_items',
-                ),
+                'readonly' => false,
+                'name' => 'natural_person_c',
+                'studio' => 'visible',
+                'label' => 'LBL_NATURAL_PERSON_C',
               ),
-              2 => 
+              4 => 
               array (
                 'name' => 'sales_stage',
                 'type' => 'enum-cascade',
@@ -210,81 +218,137 @@ array (
                   0 => 'total_revenue_line_items',
                   1 => 'closed_revenue_line_items',
                 ),
-                'span' => 12,
-              ),
-              3 => 
-              array (
-                'name' => 'amount',
-                'type' => 'currency',
-                'label' => 'LBL_LIKELY',
-                'related_fields' => 
-                array (
-                  0 => 'amount',
-                  1 => 'currency_id',
-                  2 => 'base_rate',
-                ),
-                'currency_field' => 'currency_id',
-                'base_rate_field' => 'base_rate',
-                'span' => 12,
-              ),
-              4 => 
-              array (
-                'name' => 'best_case',
-                'type' => 'currency',
-                'label' => 'LBL_BEST',
-                'related_fields' => 
-                array (
-                  0 => 'best_case',
-                  1 => 'currency_id',
-                  2 => 'base_rate',
-                ),
-                'currency_field' => 'currency_id',
-                'base_rate_field' => 'base_rate',
-                'span' => 12,
               ),
               5 => 
               array (
-                'name' => 'worst_case',
-                'type' => 'currency',
-                'label' => 'LBL_WORST',
-                'related_fields' => 
-                array (
-                  0 => 'worst_case',
-                  1 => 'currency_id',
-                  2 => 'base_rate',
-                ),
-                'currency_field' => 'currency_id',
-                'base_rate_field' => 'base_rate',
+                'readonly' => false,
+                'name' => 'priority_c',
+                'label' => 'LBL_PRIORITY_C',
               ),
               6 => 
               array (
-                'name' => 'commentlog',
-                'label' => 'LBL_COMMENTLOG',
-                'displayParams' => 
-                array (
-                  'type' => 'commentlog',
-                  'fields' => 
-                  array (
-                    0 => 'entry',
-                    1 => 'date_entered',
-                    2 => 'created_by_name',
-                  ),
-                  'max_num' => 100,
-                ),
+                'readonly' => false,
+                'name' => 'started_date_c',
+                'label' => 'LBL_STARTED_DATE_C',
               ),
               7 => 
               array (
-                'name' => 'tag',
-                'span' => 6,
+                'readonly' => false,
+                'name' => 'submitted_date_c',
+                'label' => 'LBL_SUBMITTED_DATE',
               ),
               8 => 
               array (
-                'name' => 'probability',
-                'span' => 6,
+                'readonly' => false,
+                'name' => 'expected_completion_date_c',
+                'label' => 'LBL_EXPECTED_COMPLETION_DATE',
+              ),
+              9 => 
+              array (
+                'readonly' => false,
+                'name' => 'actual_completion_date_c',
+                'label' => 'LBL_ACTUAL_COMPLETION_DATE',
+              ),
+              10 => 
+              array (
+                'name' => 'tag',
+                'span' => 12,
+              ),
+              11 => 
+              array (
+                'name' => 'description',
+                'span' => 12,
               ),
             ),
           ),
           2 => 
+          array (
+            'newTab' => true,
+            'panelDefault' => 'expanded',
+            'name' => 'LBL_RECORDVIEW_PANEL1',
+            'label' => 'LBL_RECORDVIEW_PANEL1',
+            'columns' => 2,
+            'placeholders' => 1,
+            'fields' => 
+            array (
+              0 => 
+              array (
+                'readonly' => false,
+                'name' => 'np_capacity_c',
+                'studio' => 'visible',
+                'label' => 'LBL_NP_CAPACITY_C',
+                'span' => 12,
+              ),
+              1 => 
+              array (
+                'readonly' => false,
+                'name' => 'indigenous_involvement_c',
+                'studio' => 'visible',
+                'label' => 'LBL_INDIGENOUS_INVOLVEMENT',
+                'span' => 12,
+              ),
+              2 => 
+              array (
+                'readonly' => false,
+                'name' => 'knowledge_use_c',
+                'studio' => 'visible',
+                'label' => 'LBL_KNOWLEDGE_USE',
+                'span' => 12,
+              ),
+            ),
+          ),
+          3 => 
+          array (
+            'newTab' => true,
+            'panelDefault' => 'expanded',
+            'name' => 'LBL_RECORDVIEW_PANEL2',
+            'label' => 'LBL_RECORDVIEW_PANEL2',
+            'columns' => 2,
+            'placeholders' => 1,
+            'fields' => 
+            array (
+              0 => 
+              array (
+                'readonly' => false,
+                'name' => 'agree_colla_prty_c',
+                'label' => 'LBL_AGREE_COLLA_PRTY',
+              ),
+              1 => 
+              array (
+                'readonly' => false,
+                'name' => 'agree_resource_prvd_c',
+                'label' => 'LBL_AGREE_RESOURCE_PRVD_C',
+              ),
+              2 => 
+              array (
+                'readonly' => false,
+                'name' => 'agree_resource_owner_c',
+                'label' => 'LBL_AGREE_RESOURCE_OWNER_C',
+              ),
+              3 => 
+              array (
+                'readonly' => false,
+                'name' => 'assist_authority_c',
+                'label' => 'LBL_ASSIST_AUTHORITY_C',
+              ),
+              4 => 
+              array (
+                'readonly' => false,
+                'name' => 'form_declaration_c',
+                'label' => 'LBL_FORM_DECLARATION_C',
+                'span' => 12,
+              ),
+              5 => 
+              array (
+                'readonly' => false,
+                'name' => 'assist_requested_c',
+                'studio' => 'visible',
+                'label' => 'LBL_ASSIST_REQUESTED_C',
+                'span' => 12,
+              ),
+            ),
+          ),
+          4 => 
           array (
             'name' => 'panel_hidden',
             'label' => 'LBL_RECORD_SHOWMORE',
@@ -295,21 +359,33 @@ array (
             'panelDefault' => 'expanded',
             'fields' => 
             array (
-              0 => 'next_step',
-              1 => 'opportunity_type',
+              0 => 'assigned_user_name',
+              1 => 'team_name',
               2 => 
               array (
-                'name' => 'lead_source',
-                'span' => 12,
+                'name' => 'date_modified_by',
+                'readonly' => true,
+                'inline' => true,
+                'type' => 'fieldset',
+                'label' => 'LBL_DATE_MODIFIED',
+                'fields' => 
+                array (
+                  0 => 
+                  array (
+                    'name' => 'date_modified',
+                  ),
+                  1 => 
+                  array (
+                    'type' => 'label',
+                    'default_value' => 'LBL_BY',
+                  ),
+                  2 => 
+                  array (
+                    'name' => 'modified_by_name',
+                  ),
+                ),
               ),
               3 => 
-              array (
-                'name' => 'description',
-                'span' => 12,
-              ),
-              4 => 'assigned_user_name',
-              5 => 'team_name',
-              6 => 
               array (
                 'name' => 'date_entered_by',
                 'readonly' => true,
@@ -333,29 +409,14 @@ array (
                   ),
                 ),
               ),
-              7 => 
+              4 => 
               array (
-                'name' => 'date_modified_by',
-                'readonly' => true,
-                'inline' => true,
-                'type' => 'fieldset',
-                'label' => 'LBL_DATE_MODIFIED',
-                'fields' => 
-                array (
-                  0 => 
-                  array (
-                    'name' => 'date_modified',
-                  ),
-                  1 => 
-                  array (
-                    'type' => 'label',
-                    'default_value' => 'LBL_BY',
-                  ),
-                  2 => 
-                  array (
-                    'name' => 'modified_by_name',
-                  ),
-                ),
+                'readonly' => false,
+                'name' => 'uuid_c',
+                'label' => 'LBL_UUID',
+              ),
+              5 => 
+              array (
               ),
             ),
           ),

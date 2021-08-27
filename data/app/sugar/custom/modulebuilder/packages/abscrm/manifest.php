@@ -29,9 +29,9 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'abscrm',
-  'published_date' => '2021-08-11 08:16:41',
+  'published_date' => '2021-08-26 20:08:15',
   'type' => 'module',
-  'version' => 1628669802,
+  'version' => 1630008496,
   'remove_tables' => 'prompt',
 );
 

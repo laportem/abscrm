@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-11 12:16:43
+// created: 2021-08-27 00:08:17
 $dictionary["Opportunity"]["fields"]["abs1_providers_opportunities"] = array (
   'name' => 'abs1_providers_opportunities',
   'type' => 'link',
@@ -11,4 +11,5 @@ $dictionary["Opportunity"]["fields"]["abs1_providers_opportunities"] = array (
   'id_name' => 'abs1_providers_opportunitiesopportunities_ida',
   'link-type' => 'many',
   'side' => 'left',
+  'required' => true,
 );

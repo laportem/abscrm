@@ -26,20 +26,4 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'abs1_identifications_contacts',
   ),
-  'abs1_identifications_accounts' => 
-  array (
-    'rhs_label' => 'Organisations',
-    'lhs_label' => 'Identifications',
-    'lhs_subpanel' => 'default',
-    'lhs_module' => 'ABS1_identifications',
-    'rhs_module' => 'Accounts',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'abs1_identifications_accounts',
-  ),
 );

@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-09 12:48:25
+// created: 2021-08-25 00:25:09
 $modules_sources = array (
   'Accounts' => 
   array (
@@ -16,8 +16,5 @@ $modules_sources = array (
   'Prospects' => 
   array (
     'ext_rest_twitter' => 'ext_rest_twitter',
-  ),
-  'Opportunities' => 
-  array (
   ),
 );

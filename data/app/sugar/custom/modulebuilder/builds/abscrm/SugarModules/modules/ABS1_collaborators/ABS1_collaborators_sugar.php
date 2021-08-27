@@ -59,10 +59,12 @@ class ABS1_collaborators_sugar extends Basic {
     public $locked_fields_link;
     public $sync_key;
     public $collaborator_type;
+    public $local_c;
+    public $uuid_c;
     public $contact_id_c;
     public $contact;
     public $account_id_c;
-    public $organisation;
+    public $account;
     
     public function bean_implements($interface){
         switch($interface){

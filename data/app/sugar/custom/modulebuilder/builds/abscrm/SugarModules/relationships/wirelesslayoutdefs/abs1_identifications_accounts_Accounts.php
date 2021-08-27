@@ -1,5 +1,5 @@
 <?php
- // created: 2021-08-11 12:16:42
+ // created: 2021-08-24 09:11:14
 $layout_defs["Accounts"]["subpanel_setup"]['abs1_identifications_accounts'] = array (
   'order' => 100,
   'module' => 'ABS1_identifications',

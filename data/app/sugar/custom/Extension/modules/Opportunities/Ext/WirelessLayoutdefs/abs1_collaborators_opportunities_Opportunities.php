@@ -1,5 +1,5 @@
 <?php
- // created: 2021-08-11 12:16:43
+ // created: 2021-08-27 00:08:17
 $layout_defs["Opportunities"]["subpanel_setup"]['abs1_collaborators_opportunities'] = array (
   'order' => 100,
   'module' => 'ABS1_collaborators',

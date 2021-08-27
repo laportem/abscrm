@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-11 12:14:22
+// created: 2021-08-24 09:05:45
 $viewdefs['ABS1_identifications']['base']['view']['subpanel-list'] = array (
   'panels' => 
   array (
@@ -11,19 +11,19 @@ $viewdefs['ABS1_identifications']['base']['view']['subpanel-list'] = array (
       array (
         0 => 
         array (
-          'name' => 'identification_type_c',
-          'label' => 'LBL_IDENTIFICATION_TYPE_C',
-          'enabled' => true,
-          'readonly' => false,
-          'default' => true,
-        ),
-        1 => 
-        array (
           'label' => 'LBL_NAME',
           'enabled' => true,
           'default' => true,
           'name' => 'name',
           'link' => true,
+        ),
+        1 => 
+        array (
+          'name' => 'identification_type_c',
+          'label' => 'LBL_IDENTIFICATION_TYPE_C',
+          'enabled' => true,
+          'readonly' => false,
+          'default' => true,
         ),
         2 => 
         array (
@@ -48,13 +48,6 @@ $viewdefs['ABS1_identifications']['base']['view']['subpanel-list'] = array (
           'enabled' => true,
           'readonly' => false,
           'default' => true,
-        ),
-        5 => 
-        array (
-          'label' => 'LBL_DATE_MODIFIED',
-          'enabled' => true,
-          'default' => true,
-          'name' => 'date_modified',
         ),
       ),
     ),

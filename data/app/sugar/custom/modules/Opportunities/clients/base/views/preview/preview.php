@@ -73,63 +73,22 @@ array (
               ),
               1 => 
               array (
-                'name' => 'date_closed',
-                'type' => 'date-cascade',
-                'label' => 'LBL_LIST_DATE_CLOSED',
-                'disable_field' => 
-                array (
-                  0 => 'total_revenue_line_items',
-                  1 => 'closed_revenue_line_items',
-                ),
+                'name' => 'natural_person_c',
+                'label' => 'LBL_NATURAL_PERSON_C',
               ),
               2 => 
               array (
-                'name' => 'amount',
-                'type' => 'currency',
-                'label' => 'LBL_LIKELY',
-                'related_fields' => 
-                array (
-                  0 => 'amount',
-                  1 => 'currency_id',
-                  2 => 'base_rate',
-                ),
-                'currency_field' => 'currency_id',
-                'base_rate_field' => 'base_rate',
-                'span' => 6,
+                'readonly' => false,
+                'name' => 'applicant_type_c',
+                'label' => 'LBL_APPLICANT_TYPE_C',
               ),
               3 => 
               array (
-                'name' => 'best_case',
-                'type' => 'currency',
-                'label' => 'LBL_BEST',
-                'related_fields' => 
-                array (
-                  0 => 'best_case',
-                  1 => 'currency_id',
-                  2 => 'base_rate',
-                ),
-                'currency_field' => 'currency_id',
-                'base_rate_field' => 'base_rate',
+                'readonly' => false,
+                'name' => 'purpose_c',
+                'label' => 'LBL_PURPOSE',
               ),
               4 => 
-              array (
-                'name' => 'worst_case',
-                'type' => 'currency',
-                'label' => 'LBL_WORST',
-                'related_fields' => 
-                array (
-                  0 => 'worst_case',
-                  1 => 'currency_id',
-                  2 => 'base_rate',
-                ),
-                'currency_field' => 'currency_id',
-                'base_rate_field' => 'base_rate',
-              ),
-              5 => 
-              array (
-                'name' => 'tag',
-              ),
-              6 => 
               array (
                 'name' => 'sales_stage',
                 'type' => 'enum-cascade',
@@ -140,7 +99,47 @@ array (
                   1 => 'closed_revenue_line_items',
                 ),
               ),
-              7 => 'probability',
+              5 => 
+              array (
+                'readonly' => false,
+                'name' => 'priority_c',
+                'label' => 'LBL_PRIORITY_C',
+              ),
+              6 => 
+              array (
+                'readonly' => false,
+                'name' => 'started_date_c',
+                'label' => 'LBL_STARTED_DATE_C',
+              ),
+              7 => 
+              array (
+                'readonly' => false,
+                'name' => 'submitted_date_c',
+                'label' => 'LBL_SUBMITTED_DATE',
+              ),
+              8 => 
+              array (
+                'readonly' => false,
+                'name' => 'expected_completion_date_c',
+                'label' => 'LBL_EXPECTED_COMPLETION_DATE',
+              ),
+              9 => 
+              array (
+                'readonly' => false,
+                'name' => 'actual_completion_date_c',
+                'label' => 'LBL_ACTUAL_COMPLETION_DATE',
+              ),
+              10 => 
+              array (
+                'readonly' => false,
+                'name' => 'form_declaration_c',
+                'label' => 'LBL_FORM_DECLARATION_C',
+                'span' => 12,
+              ),
+              11 => 
+              array (
+                'name' => 'tag',
+              ),
             ),
           ),
           2 => 
@@ -152,18 +151,14 @@ array (
             'columns' => 2,
             'fields' => 
             array (
-              0 => 'next_step',
-              1 => 'opportunity_type',
-              2 => 'lead_source',
-              3 => 'campaign_name',
-              4 => 
+              0 => 
               array (
                 'name' => 'description',
                 'span' => 12,
               ),
-              5 => 'assigned_user_name',
-              6 => 'team_name',
-              7 => 
+              1 => 'assigned_user_name',
+              2 => 'team_name',
+              3 => 
               array (
                 'name' => 'date_entered_by',
                 'readonly' => true,
@@ -186,7 +181,7 @@ array (
                   ),
                 ),
               ),
-              8 => 
+              4 => 
               array (
                 'name' => 'date_modified_by',
                 'readonly' => true,

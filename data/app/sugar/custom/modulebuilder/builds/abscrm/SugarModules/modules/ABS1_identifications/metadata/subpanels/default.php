@@ -17,6 +17,13 @@ array (
   'where' => '',
   'list_fields' => 
   array (
+    'name' => 
+    array (
+      'vname' => 'LBL_NAME',
+      'widget_class' => 'SubPanelDetailViewLink',
+      'width' => 10,
+      'default' => true,
+    ),
     'identification_type_c' => 
     array (
       'readonly' => false,
@@ -24,13 +31,6 @@ array (
       'default' => true,
       'vname' => 'LBL_IDENTIFICATION_TYPE_C',
       'width' => 10,
-    ),
-    'name' => 
-    array (
-      'vname' => 'LBL_NAME',
-      'widget_class' => 'SubPanelDetailViewLink',
-      'width' => 10,
-      'default' => true,
     ),
     'issuing_country_c' => 
     array (
@@ -53,12 +53,6 @@ array (
       'readonly' => false,
       'type' => 'date',
       'vname' => 'LBL_VALID_TO_C',
-      'width' => 10,
-      'default' => true,
-    ),
-    'date_modified' => 
-    array (
-      'vname' => 'LBL_DATE_MODIFIED',
       'width' => 10,
       'default' => true,
     ),

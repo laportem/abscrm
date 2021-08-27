@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-11 12:16:42
+// created: 2021-08-27 00:08:17
 $dictionary["ABS1_identifications"]["fields"]["abs1_identifications_contacts"] = array (
   'name' => 'abs1_identifications_contacts',
   'type' => 'link',
@@ -8,6 +8,7 @@ $dictionary["ABS1_identifications"]["fields"]["abs1_identifications_contacts"] =
   'module' => 'Contacts',
   'bean_name' => 'Contact',
   'side' => 'right',
+  'required' => true,
   'vname' => 'LBL_ABS1_IDENTIFICATIONS_CONTACTS_FROM_ABS1_IDENTIFICATIONS_TITLE',
   'id_name' => 'abs1_identifications_contactscontacts_ida',
   'link-type' => 'one',
@@ -18,6 +19,7 @@ $dictionary["ABS1_identifications"]["fields"]["abs1_identifications_contacts_nam
   'source' => 'non-db',
   'vname' => 'LBL_ABS1_IDENTIFICATIONS_CONTACTS_FROM_CONTACTS_TITLE',
   'save' => true,
+  'required' => true,
   'id_name' => 'abs1_identifications_contactscontacts_ida',
   'link' => 'abs1_identifications_contacts',
   'table' => 'contacts',

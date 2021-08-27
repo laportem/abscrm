@@ -31,30 +31,19 @@ array (
               ),
               1 => 
               array (
-                'name' => 'account_name',
-                'label' => 'LBL_LIST_ACCOUNT_NAME',
+                'name' => 'purpose_c',
+                'label' => 'LBL_PURPOSE',
                 'enabled' => true,
+                'readonly' => false,
                 'default' => true,
-                'related_fields' => 
-                array (
-                  0 => 'account_id',
-                ),
-                'id' => 'ACCOUNT_ID',
-                'link' => true,
-                'sortable' => true,
               ),
               2 => 
               array (
-                'name' => 'date_closed',
-                'label' => 'LBL_DATE_CLOSED',
+                'name' => 'applicant_type_c',
+                'label' => 'LBL_APPLICANT_TYPE_C',
                 'enabled' => true,
+                'readonly' => false,
                 'default' => true,
-                'type' => 'date-cascade',
-                'disable_field' => 
-                array (
-                  0 => 'total_revenue_line_items',
-                  1 => 'closed_revenue_line_items',
-                ),
               ),
               3 => 
               array (
@@ -71,67 +60,91 @@ array (
               ),
               4 => 
               array (
-                'name' => 'amount',
-                'label' => 'LBL_LIKELY',
+                'name' => 'natural_person_c',
+                'label' => 'LBL_NATURAL_PERSON_C',
+                'enabled' => true,
+                'readonly' => false,
+                'id' => 'CONTACT_ID_C',
+                'link' => true,
+                'sortable' => false,
+                'default' => true,
+              ),
+              5 => 
+              array (
+                'name' => 'account_name',
+                'label' => 'LBL_LIST_ACCOUNT_NAME',
                 'enabled' => true,
                 'default' => true,
                 'related_fields' => 
                 array (
-                  0 => 'amount',
-                  1 => 'currency_id',
-                  2 => 'base_rate',
+                  0 => 'account_id',
                 ),
-                'currency_format' => true,
-                'type' => 'currency',
-                'currency_field' => 'currency_id',
-                'base_rate_field' => 'base_rate',
-              ),
-              5 => 
-              array (
-                'name' => 'opportunity_type',
-                'label' => 'LBL_TYPE',
-                'enabled' => true,
-                'default' => true,
+                'id' => 'ACCOUNT_ID',
+                'link' => true,
+                'sortable' => true,
               ),
               6 => 
               array (
-                'name' => 'lead_source',
-                'label' => 'LBL_LEAD_SOURCE',
+                'name' => 'priority_c',
+                'label' => 'LBL_PRIORITY_C',
                 'enabled' => true,
-                'default' => true,
+                'readonly' => false,
+                'default' => false,
               ),
               7 => 
               array (
-                'name' => 'next_step',
-                'label' => 'LBL_NEXT_STEP',
+                'name' => 'started_date_c',
+                'label' => 'LBL_STARTED_DATE_C',
                 'enabled' => true,
-                'default' => true,
+                'readonly' => false,
+                'default' => false,
               ),
               8 => 
               array (
-                'name' => 'created_by_name',
-                'label' => 'LBL_CREATED',
+                'name' => 'submitted_date_c',
+                'label' => 'LBL_SUBMITTED_DATE',
                 'enabled' => true,
-                'default' => true,
-                'id' => 'CREATED_BY',
-                'link' => true,
-                'readonly' => true,
-                'sortable' => true,
+                'readonly' => false,
+                'default' => false,
               ),
               9 => 
               array (
-                'name' => 'team_name',
-                'label' => 'LBL_LIST_TEAM',
+                'name' => 'expected_completion_date_c',
+                'label' => 'LBL_EXPECTED_COMPLETION_DATE',
                 'enabled' => true,
+                'readonly' => false,
                 'default' => false,
-                'type' => 'teamset',
               ),
               10 => 
+              array (
+                'name' => 'actual_completion_date_c',
+                'label' => 'LBL_ACTUAL_COMPLETION_DATE',
+                'enabled' => true,
+                'readonly' => false,
+                'default' => false,
+              ),
+              11 => 
+              array (
+                'name' => 'date_modified',
+                'label' => 'LBL_DATE_MODIFIED',
+                'enabled' => true,
+                'readonly' => true,
+                'default' => false,
+              ),
+              12 => 
+              array (
+                'name' => 'date_entered',
+                'label' => 'LBL_DATE_ENTERED',
+                'enabled' => true,
+                'default' => false,
+                'readonly' => true,
+              ),
+              13 => 
               array (
                 'name' => 'assigned_user_name',
                 'label' => 'LBL_LIST_ASSIGNED_USER',
                 'enabled' => true,
-                'default' => true,
+                'default' => false,
                 'related_fields' => 
                 array (
                   0 => 'assigned_user_id',
@@ -140,31 +153,13 @@ array (
                 'link' => true,
                 'sortable' => true,
               ),
-              11 => 
+              14 => 
               array (
-                'name' => 'modified_by_name',
-                'label' => 'LBL_MODIFIED',
+                'name' => 'team_name',
+                'label' => 'LBL_LIST_TEAM',
                 'enabled' => true,
-                'default' => true,
-                'id' => 'MODIFIED_USER_ID',
-                'link' => true,
-                'readonly' => true,
-                'sortable' => true,
-              ),
-              12 => 
-              array (
-                'name' => 'date_entered',
-                'label' => 'LBL_DATE_ENTERED',
-                'enabled' => true,
-                'default' => true,
-                'readonly' => true,
-              ),
-              13 => 
-              array (
-                'name' => 'probability',
-                'label' => 'LBL_PROBABILITY',
-                'enabled' => true,
-                'default' => true,
+                'default' => false,
+                'type' => 'teamset',
               ),
             ),
           ),

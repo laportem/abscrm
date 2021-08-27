@@ -1,5 +1,5 @@
 <?php
-// created: 2021-08-09 20:50:07
+// created: 2021-08-27 02:17:07
 $viewdefs['Opportunities']['base']['view']['subpanel-for-contacts-opportunities'] = array (
   'type' => 'subpanel-list',
   'panels' => 
@@ -13,7 +13,7 @@ $viewdefs['Opportunities']['base']['view']['subpanel-for-contacts-opportunities'
         0 => 
         array (
           'name' => 'name',
-          'label' => 'LBL_LIST_OPPORTUNITY_NAME',
+          'label' => 'LBL_OPPORTUNITY_NAME',
           'enabled' => true,
           'default' => true,
           'related_fields' => 
@@ -25,46 +25,21 @@ $viewdefs['Opportunities']['base']['view']['subpanel-for-contacts-opportunities'
         ),
         1 => 
         array (
-          'name' => 'account_name',
-          'label' => 'LBL_LIST_ACCOUNT_NAME',
+          'name' => 'purpose_c',
+          'label' => 'LBL_PURPOSE',
           'enabled' => true,
+          'readonly' => false,
           'default' => true,
-          'related_fields' => 
-          array (
-            0 => 'account_id',
-          ),
-          'id' => 'ACCOUNT_ID',
-          'link' => true,
-          'sortable' => true,
-          'target_record_key' => 'account_id',
-          'target_module' => 'Accounts',
         ),
         2 => 
         array (
-          'name' => 'contact_role',
-          'label' => 'LBL_OPPORTUNITY_ROLE',
+          'name' => 'applicant_type_c',
+          'label' => 'LBL_APPLICANT_TYPE_C',
           'enabled' => true,
+          'readonly' => false,
           'default' => true,
         ),
         3 => 
-        array (
-          'name' => 'date_closed',
-          'label' => 'LBL_DATE_CLOSED',
-          'enabled' => true,
-          'default' => true,
-          'related_fields' => 
-          array (
-            0 => 'total_revenue_line_items',
-            1 => 'closed_revenue_line_items',
-          ),
-          'type' => 'date-cascade',
-          'disable_field' => 
-          array (
-            0 => 'total_revenue_line_items',
-            1 => 'closed_revenue_line_items',
-          ),
-        ),
-        4 => 
         array (
           'name' => 'sales_stage',
           'label' => 'LBL_LIST_SALES_STAGE',
@@ -82,42 +57,26 @@ $viewdefs['Opportunities']['base']['view']['subpanel-for-contacts-opportunities'
             1 => 'closed_revenue_line_items',
           ),
         ),
+        4 => 
+        array (
+          'name' => 'account_name',
+          'label' => 'LBL_LIST_ACCOUNT_NAME',
+          'enabled' => true,
+          'default' => true,
+          'related_fields' => 
+          array (
+            0 => 'account_id',
+          ),
+          'id' => 'ACCOUNT_ID',
+          'link' => true,
+          'sortable' => true,
+          'target_record_key' => 'account_id',
+          'target_module' => 'Accounts',
+        ),
         5 => 
         array (
-          'name' => 'amount',
-          'label' => 'LBL_LIKELY',
-          'enabled' => true,
-          'default' => true,
-          'related_fields' => 
-          array (
-            0 => 'amount',
-            1 => 'currency_id',
-            2 => 'base_rate',
-          ),
-          'currency_format' => true,
-          'type' => 'currency',
-          'currency_field' => 'currency_id',
-          'base_rate_field' => 'base_rate',
-        ),
-        6 => 
-        array (
-          'name' => 'assigned_user_name',
-          'label' => 'LBL_LIST_ASSIGNED_TO_NAME',
-          'enabled' => true,
-          'default' => true,
-          'related_fields' => 
-          array (
-            0 => 'assigned_user_id',
-          ),
-          'id' => 'ASSIGNED_USER_ID',
-          'link' => true,
-          'target_record_key' => 'assigned_user_id',
-          'target_module' => 'Employees',
-        ),
-        7 => 
-        array (
-          'name' => 'probability',
-          'label' => 'LBL_PROBABILITY',
+          'name' => 'contact_role',
+          'label' => 'LBL_OPPORTUNITY_ROLE',
           'enabled' => true,
           'default' => true,
         ),
