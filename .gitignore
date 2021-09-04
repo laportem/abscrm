@@ -6,7 +6,6 @@ data/ldap
 data/mysql
 data/redis
 backups
-utilities
 
 data/app/sugar/*.log
 data/app/sugar/.htaccess
